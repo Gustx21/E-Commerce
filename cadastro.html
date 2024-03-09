@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CadÚnico</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <menu class="principal column">
+            <header>
+                <h2>Nova <span>Cubos</span> Tecnology</h2>
+                <p class="conteudo">Somos uma equipe de mentes brilhantes, unidos por um objetivo comum: redefinir o que é possível.
+                    Avancemos com confiança, inspiração e determinação, pois o mundo está esperando pelas soluções que
+                    apenas nós podemos criar.</p>
+            </header>
+
+            <img src="../../Web Designer/Landing-Page/projeto01/imagens01/negocio.jpg" alt="Ilustração da empresa" class="ilustracao">
+
+            <footer>
+                <p>Já tem uma conta? <span><a href="cubo01.html" target="_self">Conecte-se</a></span></p>
+            </footer>
+        </menu>
+
+        <main class="column secundario">
+            <header>
+                <img src="../../Web Designer/Landing-Page/projeto01/imagens01/cube.png" alt="Logo da empresa" class="logo">
+                <h1>Criando uma nova conta</h1>
+                <p>Faça seu cadastro na Cubos usando seu nome, e-mail e senha</p>
+            </header>
+
+            <form action="#" method="post">
+
+                <div class="input-container">
+                    <input type="text" name="nome" class="input-field" placeholder="Nome" id="nome" required>
+                    <label class="username-label" for="input-field">Nome</label>
+                </div>
+
+                <div class="input-container">
+                    <input type="email" name="email" class="input-field" placeholder="E-mail" id="email" required>
+                    <label class="username-label" for="input-field">E-mail</label>
+                </div>
+ 
+            </form>
+            <p class="aviso">Ao clicar em "inscrever-se" você concorda com os termos e reconhece a <span><a
+            href="#">política de privacidade</a></span> para criar uma conta no site.</p>
+
+            <button type="button" onclick="cadastrar()">Continua</button>
+        </main>
+    </div>
+    <script src="js/cadastro.js"></script>
+</body>
+</html>
