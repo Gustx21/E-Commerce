@@ -1,27 +1,31 @@
-// Trabalhando com Promises
-let user = {}, dados = [];
+async function inserir() {
+    try {
+        const ids = Math.floor(Math.random() * 99);
+        const nomes = document.getElementById('nome').value;
+        const emails = document.getElementById('email').value;
+    
+        return await cadastrar(ids, nomes, emails);
+    } catch (error) {
+        console.log(error);
+    }
+};
 
-async function cadastrar(id) {
+async function cadastrar(id, nome, email) {
+    let dados = [];
+
     user = {
         id,
         nome: nome,
         email: email
     };
     
-    return dados.push(user);
+    dados.push(user);
+
+    return listar(dados);
 };
 
-async function listar(ids) {
-    const nome = document.getElementById('nome').value;
-    const email = document.getElementById('email').value;
-
-    const dadosInseridos = dados.map((id, index) => cadastrar(id));
-    return dadosInseridos
-};
-
-async function exemplo() {
-    const nomes = ['Pedro', 'Gustavo', 'João'];
-    const usuarios = await listar(nomes);
-
-    console.log(usuarios)
+async function listar(cadastro) {
+    const dadosInseridos = cadastro.map((insert) => { return `${insert.id}. ${insert.nome} / E-mail: ${insert.email}` });
+    const usuario = await Promise.all(dadosInseridos);
+    console.log(usuario);
 };
