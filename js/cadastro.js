@@ -4,11 +4,14 @@ async function inserir() {
         const nomes = document.getElementById('nome').value;
         const emails = document.getElementById('email').value;
 
+        // Mensagem de erro caso tenha valores númericos ou não incluir '@gmail.com'
+        if (/^\d+$/.test(nomes) || !emails.includes('@gmail.com')) {
+            throw new Error('Erro no processamento do código!!!');
+        };
+        
         return await cadastrar(ids, nomes, emails);
     } catch (erro) {
-        if (/^\d+$/.test(nomes) || erro instanceof TypeError || erro instanceof ReferenceError || erro instanceof SyntaxError) {
-            console.log('Erro no processamento desse código');
-        };
+        console.error(erro.message);
     }
 };
 
