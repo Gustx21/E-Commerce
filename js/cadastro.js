@@ -3,10 +3,12 @@ async function inserir() {
         const ids = Math.floor(Math.random() * 99);
         const nomes = document.getElementById('nome').value;
         const emails = document.getElementById('email').value;
-    
+
         return await cadastrar(ids, nomes, emails);
-    } catch (error) {
-        console.log(error);
+    } catch (erro) {
+        if (/^\d+$/.test(nomes) || erro instanceof TypeError || erro instanceof ReferenceError || erro instanceof SyntaxError) {
+            console.log('Erro no processamento desse código');
+        };
     }
 };
 
@@ -18,7 +20,7 @@ async function cadastrar(id, nome, email) {
         nome: nome,
         email: email
     };
-    
+
     dados.push(user);
 
     return listar(dados);
