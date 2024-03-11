@@ -5,29 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div>
-        <label for="nome">Nome</label>
-        <input type="text" name="nome" id="nome" placeholder="Nome" required>
+    <form action="" method="dialog" class="form">
+        <div class="input">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" placeholder="Nome" required>
+        </div>
 
-        <label for="sobrenome">Sobrenome</label>
-        <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required>
+        <div class="input">
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required>
+        </div>
+
+        <div class="input">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="E-mail" required>
+        </div>
 
         <div id="area">
             <input type="checkbox" name="JS" id="JS"> JavaScript
             <input type="checkbox" name="SQL" id="SQL"> SQL
             <input type="checkbox" name="HTML5 e CSS3" id="HTML"> HTML5 e CSS3
         </div>
-    </div>
 
-    <div>
-        <label for="email">E-mail</label>
-        <input type="email" name="email" id="email" placeholder="E-mail" required>
-    </div>
-
-    <button type="button" onclick="inserir()">Continua</button>
+        <button type="button" onclick="inserir()" id="btn">Continua</button>
+    </form>
 
     <script src="js/cadastro.js"></script>
 </body>
