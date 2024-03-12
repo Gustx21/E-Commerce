@@ -1,6 +1,5 @@
 async function inserir() {
     try {
-        const ids = Math.floor(Math.random() * 99);
         const nomes = document.getElementById('nome').value;
         const sobrenomes = document.getElementById('sobrenome').value;
         const emails = document.getElementById('email').value;
@@ -22,21 +21,20 @@ async function inserir() {
             throw new Error('Erro no processamento do código!!!');
         };
 
-        return await cadastrar(ids, nomes, sobrenomes, selection, emails);
+        return await cadastrar(nomes, sobrenomes, selection, emails);
     } catch (erro) {
         console.error(erro.message);
     }
 };
 
-async function cadastrar(id, nome, sobrenome, area, email) {
+async function cadastrar(nome, sobrenome, area, email) {
     let dados = [];
 
     user = {
-        id,
         nome: nome,
         sobrenome: sobrenome,
         email: email,
-        area: [area]
+        area: area
     };
 
     dados.push(user);
@@ -45,7 +43,9 @@ async function cadastrar(id, nome, sobrenome, area, email) {
 };
 
 async function listar(cadastro) {
-    const dadosInseridos = cadastro.map((insert) => { return `${insert.id}. ${insert.nome} ${insert.sobrenome} / E-mail: ${insert.email} / Area de atuação ${insert.area}` });
+    const dadosInseridos = cadastro.map((insert) => {
+        return `${insert.id}. ${insert.nome} ${insert.sobrenome} / E-mail: ${insert.email} / Area de atuação ${insert.area}`
+    });
     const usuario = await Promise.all(dadosInseridos);
     console.log(usuario);
 };
