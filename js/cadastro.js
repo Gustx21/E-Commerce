@@ -5,7 +5,6 @@ async function inserir() {
         const emails = document.getElementById('email').value;
         const option = document.querySelectorAll('#area input[type="checkbox"]');
 
-        // Array para armazenar as opções selecionadas
         let selection = [];
 
         // Itera sobre os checkboxes para verificar quais estão marcados
