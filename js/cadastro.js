@@ -38,13 +38,13 @@ async function cadastrar(nome, sobrenome, area, email) {
 
     dados.push(user);
 
+    console.table(dados)
     return listar(dados);
 };
 
 async function listar(cadastro) {
-    const dadosInseridos = cadastro.map((insert, index) => {
-        return `${index + 1}. ${insert.nome} ${insert.sobrenome} / E-mail: ${insert.email} / Area de atuação ${insert.area}`
+    const dadosInseridos = cadastro.map((insert) => {
+        return `${insert.nome} ${insert.sobrenome} / E-mail: ${insert.email} / Area de atuação ${insert.area}`
     });
-    const usuario = await Promise.all(dadosInseridos);
-    console.log(usuario);
+    console.log(dadosInseridos);
 };
