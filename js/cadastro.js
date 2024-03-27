@@ -38,13 +38,31 @@ async function cadastrar(nome, sobrenome, area, email) {
 
     dados.push(user);
 
-    console.table(dados)
     return listar(dados);
 };
 
-async function listar(cadastro) {
-    const dadosInseridos = cadastro.map((insert) => {
-        return `${insert.nome} ${insert.sobrenome} / E-mail: ${insert.email} / Area de atuação ${insert.area}`
+function listar(cadastro) {
+    const tabelaCorpo = document.getElementById('tabela-corpo');
+
+    tabelaCorpo.innerHTML = '';
+
+    cadastro.map(pessoa => {
+        const linha = document.createElement('tr');
+
+        const colunaNome = document.createElement('td');
+        const colunaSobrenome = document.createElement('td');
+        const colunaIdade = document.createElement('td');
+        const colunaArea = document.createElement('td');
+
+        colunaNome.textContent = pessoa.nome;
+        colunaSobrenome.textContent = pessoa.sobrenome;
+        colunaIdade.textContent = pessoa.idade;
+        colunaArea.textContent = pessoa.area;
+
+        linha.appendChild(colunaNome);
+        linha.appendChild(colunaSobrenome);
+        linha.appendChild(colunaIdade);
+
+        tabelaCorpo.appendChild(linha);
     });
-    console.log(dadosInseridos);
 };
