@@ -7,7 +7,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #F2F3AE;
     height: 98vh;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
 }
@@ -53,4 +53,20 @@ button {
 
 button:hover {
     background-color: #d9bf73;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
 }
