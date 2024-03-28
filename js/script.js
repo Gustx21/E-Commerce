@@ -41,10 +41,10 @@ async function cadastrar(nome, sobrenome, area, email) {
     return listar(dados);
 };
 
-function listar(cadastro) {
+async function listar(cadastro) {
     const tabelaCorpo = document.getElementById('tabela-corpo');
 
-    cadastro.map(pessoa => {
+    await cadastro.map(pessoa => {
         const linha = document.createElement('tr');
 
         const colunaNome = document.createElement('td');
