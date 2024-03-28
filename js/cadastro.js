@@ -44,24 +44,23 @@ async function cadastrar(nome, sobrenome, area, email) {
 function listar(cadastro) {
     const tabelaCorpo = document.getElementById('tabela-corpo');
 
-    tabelaCorpo.innerHTML = '';
-
     cadastro.map(pessoa => {
         const linha = document.createElement('tr');
 
         const colunaNome = document.createElement('td');
         const colunaSobrenome = document.createElement('td');
-        const colunaIdade = document.createElement('td');
+        const colunaEmail = document.createElement('td');
         const colunaArea = document.createElement('td');
 
         colunaNome.textContent = pessoa.nome;
         colunaSobrenome.textContent = pessoa.sobrenome;
-        colunaIdade.textContent = pessoa.idade;
+        colunaEmail.textContent = pessoa.email;
         colunaArea.textContent = pessoa.area;
 
         linha.appendChild(colunaNome);
         linha.appendChild(colunaSobrenome);
-        linha.appendChild(colunaIdade);
+        linha.appendChild(colunaEmail);
+        linha.appendChild(colunaArea);
 
         tabelaCorpo.appendChild(linha);
     });
