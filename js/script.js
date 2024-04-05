@@ -16,7 +16,7 @@ async function inserir() {
         });
 
         // Mensagem de erro caso tenha valores númericos ou não incluir '@gmail.com'
-        if (/^\d+$/.test(nomes) || /^\d+$/.test(sobrenomes) || !emails.includes('@gmail.com')) {
+        if (/[0-9]/.test(nomes) || /[0-9]/.test(sobrenomes) || !emails.includes('@gmail.com')) {
             throw new Error('Erro no processamento do código!!!');
         };
 
