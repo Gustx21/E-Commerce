@@ -5,7 +5,7 @@
       "empresa": "Tech Solutions",
       "descricao": "Empresa líder em soluções de software para empresas.",
       "url": "https://www.techsolutions.com",
-      "imagem": "https://www.techsolutions.com/logo.png",
+      "imagem": "go.png",
       "categoria": "Tecnologia"
     },
     {
@@ -13,7 +13,7 @@
       "empresa": "Educação+",
       "descricao": "Plataforma de ensino online para todas as idades.",
       "url": "https://www.educacaomais.com",
-      "imagem": "https://www.educacaomais.com/logo.png",
+      "imagem": "o.png",
       "categoria": "Educação"
     },
     {
@@ -21,7 +21,7 @@
       "empresa": "Saúde Total",
       "descricao": "Clinica médica com foco no cuidado integral do paciente.",
       "url": "https://www.saudetotal.com",
-      "imagem": "https://www.saudetotal.com/logo.png",
+      "imagem": "png",
       "categoria": "Saúde"
     },
     {
@@ -29,7 +29,7 @@
       "empresa": "Construções ABC",
       "descricao": "Empresa especializada em construção civil e infraestrutura.",
       "url": "https://www.construcoesabc.com",
-      "imagem": "https://www.construcoesabc.com/logo.png",
+      "imagem": "https://github.com/Gustx21/Cadastro-JS/blob/0e734c30cd1c39b3dff8ea573b065ea38d9f0314/imagem/build-4.png",
       "categoria": "Construção"
     },
     {
@@ -37,7 +37,7 @@
       "empresa": "FoodTech",
       "descricao": "Inovação em alimentos e tecnologia culinária.",
       "url": "https://www.foodtech.com",
-      "imagem": "https://www.foodtech.com/logo.png",
+      "imagem": "g",
       "categoria": "Alimentício"
     },
     {
@@ -45,7 +45,7 @@
       "empresa": "Transportadora Rápida",
       "descricao": "Logística e transporte de cargas rápida e eficiente.",
       "url": "https://www.transportadorarapida.com",
-      "imagem": "https://www.transportadorarapida.com/logo.png",
+      "imagem": ".com/logo.png",
       "categoria": "Logística"
     },
     {
@@ -53,7 +53,7 @@
       "empresa": "EcoEnergy",
       "descricao": "Soluções sustentáveis em energia renovável.",
       "url": "https://www.ecoenergy.com",
-      "imagem": "https://www.ecoenergy.com/logo.png",
+      "imagem": "ng",
       "categoria": "Energia"
     },
     {
@@ -61,7 +61,7 @@
       "empresa": "Fashion Trends",
       "descricao": "Moda e tendências para todos os estilos.",
       "url": "https://www.fashiontrends.com",
-      "imagem": "https://www.fashiontrends.com/logo.png",
+      "imagem": "go.png",
       "categoria": "Moda"
     },
     {
@@ -69,7 +69,7 @@
       "empresa": "Beleza Natural",
       "descricao": "Produtos de beleza naturais e sustentáveis.",
       "url": "https://www.belezanatural.com",
-      "imagem": "https://www.belezanatural.com/logo.png",
+      "imagem": "go.png",
       "categoria": "Beleza"
     },
     {
@@ -77,7 +77,7 @@
       "empresa": "Mundo dos Livros",
       "descricao": "Livros e cultura para todos os leitores.",
       "url": "https://www.mundodoslivros.com",
-      "imagem": "https://www.mundodoslivros.com/logo.png",
+      "imagem": "ogo.png",
       "categoria": "Cultura"
     },
     {
@@ -85,7 +85,7 @@
       "empresa": "Arte em Casa",
       "descricao": "Decoração e arte para tornar sua casa única.",
       "url": "https://www.arteemcasa.com",
-      "imagem": "https://www.arteemcasa.com/logo.png",
+      "imagem": "png",
       "categoria": "Decoração"
     },
     {
@@ -93,7 +93,7 @@
       "empresa": "Turismo Total",
       "descricao": "Agência de viagens para explorar o mundo.",
       "url": "https://www.turismototal.com",
-      "imagem": "https://www.turismototal.com/logo.png",
+      "imagem": "o.png",
       "categoria": "Turismo"
     },
     {
@@ -101,7 +101,7 @@
       "empresa": "AgroNegócio",
       "descricao": "Inovação e tecnologia no agronegócio.",
       "url": "https://www.agronegocio.com",
-      "imagem": "https://www.agronegocio.com/logo.png",
+      "imagem": ".png",
       "categoria": "Agronegócio"
     },
     {
@@ -109,7 +109,7 @@
       "empresa": "Fitness Pro",
       "descricao": "Fitness e saúde para uma vida ativa.",
       "url": "https://www.fitnesspro.com",
-      "imagem": "https://www.fitnesspro.com/logo.png",
+      "imagem": "png",
       "categoria": "Saúde"
     },
     {
@@ -117,7 +117,7 @@
       "empresa": "TechStart",
       "descricao": "Incubadora de startups inovadoras.",
       "url": "https://www.techstart.com",
-      "imagem": "https://www.techstart.com/logo.png",
+      "imagem": "ng",
       "categoria": "Tecnologia"
     },
     {
@@ -125,7 +125,7 @@
       "empresa": "Arte em Movimento",
       "descricao": "Promovendo a arte em todas as suas formas.",
       "url": "https://www.arteemmovimento.com",
-      "imagem": "https://www.arteemmovimento.com/logo.png",
+      "imagem": "logo.png",
       "categoria": "Arte"
     },
     {
@@ -133,7 +133,7 @@
       "empresa": "PetLove",
       "descricao": "Amor e cuidado para seus animais de estimação.",
       "url": "https://www.petlove.com",
-      "imagem": "https://www.petlove.com/logo.png",
+      "imagem": "",
       "categoria": "Pets"
     },
     {
@@ -141,7 +141,7 @@
       "empresa": "CleanHome",
       "descricao": "Produtos de limpeza e higiene para sua casa.",
       "url": "https://www.cleanhome.com",
-      "imagem": "https://www.cleanhome.com/logo.png",
+      "imagem": "ng",
       "categoria": "Limpeza"
     },
     {
@@ -149,7 +149,7 @@
       "empresa": "Consultoria 360",
       "descricao": "Consultoria empresarial em todos os setores.",
       "url": "https://www.consultoria360.com",
-      "imagem": "https://www.consultoria360.com/logo.png",
+      "imagem": "ogo.png",
       "categoria": "Consultoria"
     },
     {
@@ -157,7 +157,7 @@
       "empresa": "FarmaVida",
       "descricao": "Farmácia com atendimento personalizado e produtos de qualidade.",
       "url": "https://www.farmavida.com",
-      "imagem": "https://www.farmavida.com/logo.png",
+      "imagem": "ng",
       "categoria": "Saúde"
     }
   ]

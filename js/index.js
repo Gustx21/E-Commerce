@@ -8,7 +8,7 @@ async function consulta() {
         materiais.forEach((info) => {
             dadosEmpresa.innerHTML += `
                 <div class="empresas">
-                    <img src="#" title="${info.empresa}" alt="Logo da empresa">
+                    <img src="#" title="${info.empresa}" alt="Logo da empresa" class="logo">
                     <h3 class="titulo-empresa">${info.empresa}</h3>
                     <p>${info.descricao}</p>
                     <p>Categoria: <strong>${info.categoria}</strong></p>
