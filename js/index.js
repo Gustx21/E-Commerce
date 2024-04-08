@@ -2,13 +2,13 @@ const dadosEmpresa = document.querySelector('.dados-empresas');
 
 async function consulta() {
     try {
-        const api = await fetch('http://localhost:3000/empresas');
-        const materiais = await api.json();
+        const URL = await fetch('http://localhost:3000/empresas');
+        const dadosCNPJ = await URL.json();
 
-        materiais.forEach((info) => {
+        dadosCNPJ.forEach((info) => {
             dadosEmpresa.innerHTML += `
                 <div class="empresas">
-                    <img src="#" title="${info.empresa}" alt="Logo da empresa" class="logo">
+                    <img src="${info.imagem}" title="${info.empresa}" alt="Logo da empresa" class="logo">
                     <h3 class="titulo-empresa">${info.empresa}</h3>
                     <p>${info.descricao}</p>
                     <p>Categoria: <strong>${info.categoria}</strong></p>
@@ -24,29 +24,3 @@ async function consulta() {
 };
 
 consulta();
-
-const pesquisa = document.getElementById('pesquisar');
-const empresas = document.querySelectorAll('.empresas');
-
-pesquisa.addEventListener("input", filtrar);
-
-async function filtrar() {
-    const valor = await pesquisa.value.toLowerCase();
-
-    empresas.forEach((base) => {
-        const titulo = base.querySelector('.titulo-empresa').textContent.toLowerCase();
-        console.log(titulo)
-        
-        for (const base of empresas) {
-            if (!valor === "") {
-                if (titulo.includes(valor)) {
-                    base.style.display = 'block';
-                } else {
-                    base.style.display = 'none';
-                }
-            } else {
-                base.style.display = 'block';
-            }
-        };
-    });
-};
