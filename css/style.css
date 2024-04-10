@@ -28,7 +28,7 @@ h1 {
     margin: 5px;
 }
 
-.empresas {
+.produtos {
     border: 2px solid #A3B18A;
     box-shadow: 1px 1px 1px #344E41;
     border-radius: 10px;
@@ -36,11 +36,17 @@ h1 {
     margin: 5px;
 }
 
-.titulo-empresa {
+.titulo {
     margin-top: 8px;
     margin-bottom: 8px;
 }
 
-.logo {
-    width: 15%;
+.preco {
+    border-width: 10px;
+    font-size: 28px;
+    padding: 10px 0;
+}
+
+.img-produto {
+    width: 30%;
 }
