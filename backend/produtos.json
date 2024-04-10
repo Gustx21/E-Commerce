@@ -1,0 +1,52 @@
+{
+  "produtos": [
+    {
+      "imagem": "https://br.pinterest.com/ionecleiacoutin/vestidos-longos-e-estampados/",
+      "nome": "Vestido Longo Estampado com Fenda Lateral",
+      "descricao": "Vestido longo confeccionado em viscose, com estampa floral vibrante, decote em V e fenda lateral. Possui alças finas ajustáveis e caimento fluido. Ideal para ocasiões especiais.",
+      "categoria": "Moda Feminina > Vestidos > Vestidos Longos",
+      "valor": 199.90,
+      "marca": "[Nome da Marca]",
+      "material": "Viscose",
+      "cor": "Azul com estampa floral",
+      "tamanhos": [
+        "P",
+        "M",
+        "G"
+      ],
+      "ocasiões": [
+        "Casual",
+        "Festa"
+      ],
+      "detalhes": [
+        "Fenda lateral",
+        "Decote em V",
+        "Alças finas ajustáveis"
+      ]
+    },
+    {
+      "imagem": "https://br.pinterest.com/cintia_harumii/cropped-amarra%C3%A7%C3%A3o/",
+      "nome": "Blusa Cropped com Amarração Frontal",
+      "descricao": "Blusa cropped confeccionada em algodão, com decote em V e amarração frontal. Possui mangas bufantes e caimento leve. Ideal para o dia a dia.",
+      "categoria": "Moda Feminina > Blusas > Blusas Cropped",
+      "valor": 129.90,
+      "marca": "[Nome da Marca]",
+      "material": "Algodão",
+      "cor": "Branco",
+      "tamanhos": [
+        "P",
+        "M",
+        "G"
+      ],
+      "ocasiões": [
+        "Casual",
+        "Balada"
+      ],
+      "detalhes": [
+        "Amarração frontal",
+        "Decote em V",
+        "Mangas bufantes"
+      ]
+    }
+  ]
+}
