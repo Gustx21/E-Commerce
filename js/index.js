@@ -8,9 +8,11 @@ async function consultaDados() {
         desc.forEach((info) => {
             dadosProdutos.innerHTML += `
                 <div class="produtos">
-                    <img src="${info.imagem}" title="${info.marca}" alt="${info.nome}" class="img-produto">
+                    <img src="${info.imagem}" alt="${info.nome}" class="img-produto">
                     <h3 class="titulo">${info.nome}</h3>
+                    <p>${info.descricao}</p>
                     <p>Marca: <strong>${info.marca}</strong></p>
+                    <p>${info.material}</p>
                     <p class="preco">${info.valor}</p>
                 </div>`
         });
@@ -24,4 +26,6 @@ async function consultaDados() {
 
 consultaDados();
 
-async function name(params) {}
+const pesquisa = document.getElementById('pesquisa');
+
+async function filtraPesquisa() {};
