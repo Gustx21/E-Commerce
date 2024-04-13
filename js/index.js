@@ -1,6 +1,6 @@
 const dadosProdutos = document.querySelector('.commerce');
 
-async function consulta() {
+async function consultaDados() {
     try {
         const URL = await fetch('http://localhost:3000/produtos');
         const desc = await URL.json();
@@ -16,24 +16,12 @@ async function consulta() {
         });
 
     } catch (error) {
-        alert(`Houve erro no carregamento do código: ${error}.`);
+        alert(`Houve erro no carregamento do código: ${error}`);
     } finally {
         console.log("Codigo finalizado.");
     }
 };
 
-consulta();
+consultaDados();
 
-const pesquisa = document.getElementById('pesquisa');
-pesquisa.addEventListener("input", buscar);
-
-function buscar() {
-    const produtos = document.querySelectorAll('.produtos');
-    const valorFiltro = pesquisa.value.toLowerCase();
-
-    empresas.forEach((totalEmpresas) => {
-        const titulo = totalEmpresas.querySelector('.titulo-empresa').textContent.toLowerCase();
-
-        totalEmpresas.style.display = valorFiltro ? titulo.includes(valorFiltro) ? 'block' : 'none' : 'block';
-    });
-};
+async function name(params) {}
