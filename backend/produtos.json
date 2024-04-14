@@ -1,14 +1,14 @@
 {
   "produtos": [
     {
-      "imagem": "https://br.pinterest.com/ionecleiacoutin/vestidos-longos-e-estampados/",
+      "imagem": "https://images.pexels.com/photos/11494673/pexels-photo-11494673.jpeg?auto=compress&cs=tinysrgb&w=600",
       "nome": "Vestido Longo Estampado com Fenda Lateral",
       "descricao": "Vestido longo confeccionado em viscose, com estampa floral vibrante, decote em V e fenda lateral. Possui alças finas ajustáveis e caimento fluido. Ideal para ocasiões especiais.",
       "categoria": "Moda Feminina > Vestidos > Vestidos Longos",
       "valor": 199.90,
-      "marca": "[Nome da Marca]",
+      "marca": "Raffaela",
       "material": "Viscose",
-      "cor": "Azul com estampa floral",
+      "cor": "Branco com estampa floral",
       "tamanhos": [
         "P",
         "M",
@@ -25,14 +25,38 @@
       ]
     },
     {
-      "imagem": "https://br.pinterest.com/cintia_harumii/cropped-amarra%C3%A7%C3%A3o/",
-      "nome": "Blusa Cropped com Amarração Frontal",
+      "imagem": "https://images.pexels.com/photos/18090584/pexels-photo-18090584/free-photo-of-atraente-encantador-cativante-blusa.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "nome": "Blusa Cropped Lana Del Rey",
+      "descricao": "Blusa cropped confeccionada em algodão, com frase da Lana Del Rey. Possui mangas curtas e gola alta. Ideal para o dia a dia.",
+      "categoria": "Moda Feminina > Blusas > Blusas Cropped",
+      "valor": 129.90,
+      "marca": "Star",
+      "material": "Algodão",
+      "cor": "Bege com frase",
+      "tamanhos": [
+        "P",
+        "M",
+        "G"
+      ],
+      "ocasiões": [
+        "Casual",
+        "Balada"
+      ],
+      "detalhes": [
+        "Amarração frontal",
+        "Gola alta",
+        "Mangas curtas"
+      ]
+    },
+    {
+      "imagem": "https://images.pexels.com/photos/18797624/pexels-photo-18797624/free-photo-of-mulher-livros-padronizar-padrao.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "nome": "Vestido Longo com Estampado Floral",
       "descricao": "Blusa cropped confeccionada em algodão, com decote em V e amarração frontal. Possui mangas bufantes e caimento leve. Ideal para o dia a dia.",
       "categoria": "Moda Feminina > Blusas > Blusas Cropped",
       "valor": 129.90,
-      "marca": "[Nome da Marca]",
+      "marca": "Dani Santtiago",
       "material": "Algodão",
-      "cor": "Branco",
+      "cor": "Azul com estampa floral",
       "tamanhos": [
         "P",
         "M",
