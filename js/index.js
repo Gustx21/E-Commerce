@@ -9,10 +9,13 @@ async function consultaDados() {
             dadosProdutos.innerHTML += `
                 <div class="produtos">
                     <img src="${info.imagem}" alt="${info.nome}" class="img-produto">
-                    <h3 class="titulo">${info.nome}</h3>
-                    <p>${info.descricao}</p>
-                    <p>Marca: <strong>${info.marca}</strong></p>
-                    <p>${info.material}</p>
+                    <div class="conteudo">
+                        <h3 class="titulo">${info.nome}</h3>
+                        <p>${info.descricao}</p>
+                        <p>Marca: <strong>${info.marca}</strong></p>
+                        <p>Material: ${info.material}, Cor ${info.cor}</p>
+                        <p>${info.categoria}</p>
+                    </div>
                     <p class="preco">${info.valor}</p>
                 </div>`
         });
