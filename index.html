@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,57 +9,58 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="imagem/logo.png" type="image/x-icon">
 </head>
+
 <body>
     <!-- BARRA DE INTERAÇÃO -->
     <header>
         <menu>
-            <a class="guias" href="#">Ínicio</a>
-            <a class="guias" href="#">App</a>
-            <a class="guias" href="#">Fale conosco</a>
+            <nav>
+                <a class="guias" href="#">Ínicio</a>
+                <a class="guias" href="#">App</a>
+                <a class="guias" href="#">Fale conosco</a>
 
-            <div>
-                <button class="btn">Inscrever-se</button>
-                <button class="btn">Entrar</button>
-            </div>
+                <div>
+                    <input type="search" name="dados" id="pesquisar" placeholder="Digite aqui">
+                    <button class="btn">pesquisar</button>
+                </div>
+            </nav>
+
+            <section class="botao-pesquisa">
+                <a href="#" name="Tudo" class="botaoPesquisa">Tudo</a>
+                <a href="#" name="Fenda lateral" class="botaoPesquisa">Fenda lateral</a>
+                <a href="#" name="Decote em V" class="botaoPesquisa">Decote em V</a>
+                <a href="#" name="Alças finas ajustáveis" class="botaoPesquisa">Alças finas ajustáveis</a>
+                <a href="#" name="Amarração frontal" class="botaoPesquisa">Amarração frontal</a>
+                <a href="#" name="Gola alta" class="botaoPesquisa">Gola alta</a>
+                <a href="#" name="Mangas curtas" class="botaoPesquisa">Mangas curtas</a>
+                <a href="#" name="Mangas bufantes" class="botaoPesquisa">Mangas bufantes</a>
+                <a href="#" name="Babados nas mangas e barra" class="botaoPesquisa">Babados nas mangas e barra</a>
+                <a href="#" name="Caimento leve e solto" class="botaoPesquisa">Caimento leve e solto</a>
+                <a href="#" name="Caimento slim fit" class="botaoPesquisa">Caimento slim fit</a>
+            </section>
         </menu>
-        <main class="barra_pesquisa">
-            <div>
-                <h2>Loja Virtual</h2>
-                
-                <label for="dados">Insira nome, categoria ou marca:</label>
-                <input type="search" name="dados" id="pesquisar">
-            </div>
+
+        <main id="conteudo">
+            <h1>Loja Virtual</h1>
         </main>
     </header>
 
-    <section class="superior__secao__container">
-        <div class="superior__secao__container-wrapper">
-            <a href="#" name="Tudo" class="botaoPesquisa">Tudo</a>
-            <a href="#" name="Moda Atual" class="botaoPesquisa">Moda Atual</a>
-            <a href="#" name="Ao Vivo" class="botaoPesquisa">Ao Vivo</a>
-            <a href="#" name="Podcasts" class="botaoPesquisa">Podcasts</a>
-            <a href="#" name="Front-end" class="botaoPesquisa">Front-end</a>
-            <a href="#" name="Mobile" class="botaoPesquisa">Mobile</a>
-            <a href="#" name="Data Science" class="botaoPesquisa">Data Science</a>
-            <a href="#" name="Apps" class="botaoPesquisa">Apps</a>
-            <a href="#" name="Programação" class="botaoPesquisa">Programação</a>
-            <a href="#" name="Inteligência Artificial" class="botaoPesquisa">Inteligência Artificial</a>
-            <a href="#" name="Inovação" class="botaoPesquisa">Inovação</a>
-        </div>
-    </section>
 
     <!-- CONTÉUDO DO SERVIDOR -->
     <section class="commerce"></section>
-    
+
     <!-- RODAPÉ -->
     <footer>
         <div id="rodape">
             <img class="logo" src="imagem/logo.png" alt="Logo">
             <p>Umbrella fazendo a diferença. Acesse nossas redes sociais.</p>
-            <a href="#"><img src="../../Web Designer/Landing-Page/projeto04/imagens04/facebook.png" alt="Logo Facebook"></a>
+            <a href="#"><img src="../../Web Designer/Landing-Page/projeto04/imagens04/facebook.png"
+                    alt="Logo Facebook"></a>
             <a href="#"><img src="../../Web Designer/Landing-Page/projeto04/imagens04/arroba.png" alt="Logo E-mail"></a>
-            <a href="#"><img src="../../Web Designer/Landing-Page/projeto04/imagens04/youtube.png" alt="Logo Youtube"></a>
-            <a href="#"><img src="../../Web Designer/Landing-Page/projeto04/imagens04/twitter.png" alt="Logo Tiwtter"></a>
+            <a href="#"><img src="../../Web Designer/Landing-Page/projeto04/imagens04/youtube.png"
+                    alt="Logo Youtube"></a>
+            <a href="#"><img src="../../Web Designer/Landing-Page/projeto04/imagens04/twitter.png"
+                    alt="Logo Tiwtter"></a>
         </div>
 
         <div class="rodape">
@@ -92,4 +94,5 @@
 
     <script src="js/index.js"></script>
 </body>
+
 </html>
