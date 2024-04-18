@@ -1,52 +1,181 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-.barra_pesquisa {
-    margin: 10px;
-    padding: 20px;
-    border: 2px solid #344E41;
-    border-radius: 10px;
+.erro {
+    text-align: center;
+    background-color: #344E41;
+    color: #f8f8f8;
+}
+
+.logo {
+    width: 55px;
+}
+
+body {
+    row-gap: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+nav {
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
-h1 {
-    background-color: #A3B18A;
-    padding: 5px;
-    width: fit-content;
+.guias {
+    color: #000;
+    padding-top: 10px;
+    text-decoration: none;
+}
+
+/* SEÇÃO PESQUISA */
+.botao-pesquisa {
+    display: flex;
+    justify-content: space-evenly;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #344E41;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #344E41;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.botaoPesquisa {
+    padding: 12px;
+    margin: 20px 0;
     border-radius: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: #DAD7CD;
+    color: #000;
+    transition: 0.5s;
+}
+
+.botaoPesquisa:hover {
+    background-color: #A3B18A;
+}
+
+.btn {
+    background-color: #588157;
+    border: none;
+    border-radius: 10px;
+
+    color: #f9f9f9;
+    cursor: pointer;
+
+    padding: 10px 30px;
+    transition: .5s;
+}
+
+.btn:hover {
+    background-color: #344E41;
 }
 
 #pesquisar {
     width: fit-content;
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
-.dados-empresas {
-    text-align: justify;
-    margin: 5px;
+#conteudo {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* SEÇÃO DO SERVIDOR */
+.commerce {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 60px;
+    width: 85%;
+    margin: 4rem auto;
 }
 
 .produtos {
-    border: 2px solid #A3B18A;
-    box-shadow: 1px 1px 1px #344E41;
+    width: 500px;
+    background-color: #f8f8f8;
     border-radius: 10px;
-    padding: 10px;
-    margin: 5px;
+    border: 2px solid #344E41;
+    padding: 30px;
 }
 
+
 .titulo {
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.conteudo {
+    text-align: justify;
+    grid-column: span 2;
+    grid-row: 2;
+}
+
+.conteudo p {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.detalhes {
+    margin: 20px;
+    padding: 10px;
 }
 
 .preco {
-    border-width: 10px;
-    font-size: 28px;
-    padding: 10px 0;
+    grid-column: span 2;
+    grid-row: 2;
 }
 
 .img-produto {
-    width: 30%;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    border-radius: 10px;
+    grid-column: span 2;
+    grid-row: 1;
+    object-fit: cover;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #f8f8f8;
+    color: #000;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    padding: 30px;
+}
+
+footer img {
+    width: 13%;
+    padding: 8px;
+}
+
+.rodape h3 {
+    font-size: 25px;
+}
+
+.rodape a {
+    color: #000;
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.rodape a:hover {
+    text-decoration: underline;
+}
+
+#rodape {
+    width: 70%;
 }
