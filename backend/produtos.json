@@ -2,7 +2,7 @@
   "produtos": [
     {
       "imagem": "https://images.pexels.com/photos/11494673/pexels-photo-11494673.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "nome": "Vestido Longo Estampado com Fenda Lateral",
+      "nome": "Vestido Longo Estampado com Decote em V",
       "descricao": "Vestido longo confeccionado em viscose, com estampa floral vibrante, decote em V e fenda lateral. Possui alças finas ajustáveis e caimento fluido. Ideal para ocasiões especiais.",
       "categoria": "Moda Feminina > Vestidos > Vestidos Longos",
       "valor": 199.90,
@@ -14,7 +14,7 @@
         "M",
         "G"
       ],
-      "ocasiões": [
+      "ocasioes": [
         "Casual",
         "Festa"
       ],
@@ -38,7 +38,7 @@
         "M",
         "G"
       ],
-      "ocasiões": [
+      "ocasioes": [
         "Casual",
         "Balada"
       ],
@@ -52,7 +52,7 @@
       "imagem": "https://images.pexels.com/photos/18797624/pexels-photo-18797624/free-photo-of-mulher-livros-padronizar-padrao.jpeg?auto=compress&cs=tinysrgb&w=600",
       "nome": "Vestido Longo com Estampado Floral",
       "descricao": "Blusa cropped confeccionada em algodão, com decote em V e amarração frontal. Possui mangas bufantes e caimento leve. Ideal para o dia a dia.",
-      "categoria": "Moda Feminina > Blusas > Blusas Cropped",
+      "categoria": "Moda Feminina > Vestidos > Vestidos Longos",
       "valor": 129.90,
       "marca": "Dani Santtiago",
       "material": "Algodão",
@@ -62,7 +62,7 @@
         "M",
         "G"
       ],
-      "ocasiões": [
+      "ocasioes": [
         "Casual",
         "Balada"
       ],
@@ -70,6 +70,82 @@
         "Amarração frontal",
         "Decote em V",
         "Mangas bufantes"
+      ]
+    },
+    {
+      "imagem": "https://images.pexels.com/photos/6311332/pexels-photo-6311332.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "nome": "Moletom Branco",
+      "descricao": "Blusa feminina confeccionada em viscose leve e fluida, com decote em V valorizando o colo e babados nas mangas e barra para um toque romântico e feminino. Perfeita para o dia a dia ou ocasiões especiais.",
+      "categoria": "Moda Masculina > Moletom > Moletom Branco",
+      "valor": 99.90,
+      "marca": "Tommy",
+      "material": "Moletom",
+      "cor": "Branco",
+      "tamanhos": [
+        "P",
+        "M",
+        "G"
+      ],
+      "ocasiões": [
+        "Casual",
+        "Frio",
+        "Dia a Dia"
+      ],
+      "detalhes": [
+        "Decote em V",
+        "Babados nas mangas e barra",
+        "Caimento leve e solto"
+      ]
+    },
+    {
+      "imagem": "https://images.pexels.com/photos/1462637/pexels-photo-1462637.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "nome": "Camisa Casual Listrada Azul",
+      "descricao": "Camisa polo masculina confeccionada em piquet 100% algodão, com gola polo clássica e mangas curtas. Ideal para o dia a dia, trabalho ou lazer.",
+      "categoria": "Moda Feminina > Camisas Azul > Camisas Listrada",
+      "valor": 129.90,
+      "marca": "Vitorie",
+      "material": "Algodão Piquet",
+      "cor": "Azul Claro",
+      "tamanhos": [
+        "P",
+        "M",
+        "G",
+        "GG"
+      ],
+      "ocasiões": [
+        "Casual",
+        "Trabalho",
+        "Dia a Dia"
+      ],
+      "detalhes": [
+        "Gola polo canelada",
+        "Manga curta com canelado no punho",
+        "Botões de madrepérola",
+        "Caimento slim fit"
+      ]
+    },
+    {
+      "imagem": "https://images.pexels.com/photos/428338/pexels-photo-428338.jpeg?auto=compress&cs=tinysrgb&w=600m/file/br-11134211-7qukw-lf31gih5p2azc1",
+      "nome": "Camiseta Culprit",
+      "descricao": "Gato andando sobre cimento fresco representando um status http de criação.",
+      "categoria": "Moda Feminina > Camiseta Cinza > Camiseta Casual",
+      "valor": 0.99,
+      "marca": "Culprit Appart",
+      "material": "Pelo",
+      "cor": "Branco com estampa floral",
+      "tamanhos": [
+        "P",
+        "M",
+        "G"
+      ],
+      "ocasioes": [
+        "Casual",
+        "Festa"
+      ],
+      "detalhes": [
+        "Fenda lateral",
+        "Decote em V",
+        "Alças finas ajustáveis"
       ]
     }
   ]
