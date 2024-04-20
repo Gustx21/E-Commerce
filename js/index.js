@@ -8,22 +8,20 @@ async function consultaDados() {
         descricao.forEach((info) => {
             const produtoDiv = document.createElement('div');
             produtoDiv.classList.add('produtos');
+            
+            produtoDiv.innerHTML += 
+            `<img src="${info.imagem}" alt="imagem" class="img-produto">
+                <div class="conteudo">
+                    <h1 class="titulo">${info.nome} - ${info.marca}</h1>
+                    <ul type="circle" class="detalhe"></ul>
+                </div>
+                <p class="preco">${info.valor}</p>`
+            ;
 
-            produtoDiv.innerHTML += `
-            <img src="${info.imagem}" alt="imagem" class="img-produto">
-            <div class="conteudo">
-                <h1 class="titulo">${info.nome} - ${info.marca}</h1>
-                <p>${info.descricao}</p>
-                <p>${info.detalhes}</p>
-                <ul type="circle" class="detalhe"></ul>
-            </div>
-            <p class="preco">${info.valor}</p>
-        `;
-
-            const detalheUl = produtoDiv.querySelector('.detalhes');
+            let detalheUl = produtoDiv.querySelector('.detalhe');
 
             info.detalhes.forEach((detalhe) => {
-                const li = document.createElement('li');
+                let li = document.createElement('li');
                 li.textContent = detalhe;
 
                 detalheUl.appendChild(li);
@@ -41,7 +39,7 @@ async function consultaDados() {
 
 consultaDados();
 
-const botaoPesquisa = document.getElementsByClassName('btn');
+const botaoPesquisa = document.querySelector('.btn');
 
 botaoPesquisa.addEventListener("click", () => {
     const infor = document.querySelectorAll('.produtos');
