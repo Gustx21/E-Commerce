@@ -86,19 +86,14 @@ nav {
     box-sizing: border-box;
 }
 
-#conteudo {
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
 /* SEÇÃO DO SERVIDOR */
 .commerce {
     display: grid;
     grid-template-columns: auto auto;
+    justify-content: center;
     gap: 60px;
-    width: 85%;
-    margin: 4rem auto;
+    width: 100%;
+    margin: 4rem 0;
 }
 
 .produtos {
