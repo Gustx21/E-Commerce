@@ -9,17 +9,16 @@ async function consultaDados() {
             const produtoDiv = document.createElement('div');
             produtoDiv.classList.add('produtos');
 
-            produtoDiv.innerHTML +=
-                `
-                <img src="${info.imagem}" alt="${info.nome}" class="img-produto">
-                <div class="conteudo">
-                    <h1 class="titulo">${info.nome} - ${info.marca}</h1>
-                    <p>${info.descricao}</p>
-                    <p>${info.categoria}</p>
-                    <ul class="detalhes"></ul>
-                </div>
-                <p class="preco">${info.valor}</p>`
-            ;
+            produtoDiv.innerHTML += `
+            <img src="${info.imagem}" alt="imagem" class="img-produto">
+            <div class="conteudo">
+                <h1 class="titulo">${info.nome} - ${info.marca}</h1>
+                <p>${info.descricao}</p>
+                <p>${info.detalhes}</p>
+                <ul type="circle" class="detalhe"></ul>
+            </div>
+            <p class="preco">${info.valor}</p>
+        `;
 
             const detalheUl = produtoDiv.querySelector('.detalhes');
 
@@ -37,12 +36,12 @@ async function consultaDados() {
         dadosProdutos.innerHTML = `<h2 class="erro">Houve erro no carregamento do código: ${error}</h2>`;
     } finally {
         console.log("Codigo finalizado.");
-    }
+    };
 };
 
 consultaDados();
 
-const botaoPesquisa = document.querySelector('.btn');
+const botaoPesquisa = document.getElementsByClassName('btn');
 
 botaoPesquisa.addEventListener("click", () => {
     const infor = document.querySelectorAll('.produtos');
@@ -59,29 +58,28 @@ botaoPesquisa.addEventListener("click", () => {
                 resultado.style.display = "none";
             }
         }
-    } else {
-        resultado.style.display = "grid";
-    }
+    };
 });
 
 const categoriaBTN = document.querySelectorAll('.botaoPesquisa');
 
 categoriaBTN.forEach((valores) => {
     let nomeDetalhe = valores.getAttribute('name');
-    valores.addEventListener("click", () => filtraDetalhe(nomeDetalhe))
-})
 
-function filtraDetalhe(filtro) {
-    const produtos = document.querySelectorAll(".produtos");
+    valores.addEventListener('click', filtraDetalhe(nomeDetalhe))
 
-    for (let produto of produtos) {
-        let detalhes = produto.querySelector(".detalhes").textContent.toLowerCase();
-        let valorFiltro = filtro.toLowerCase();
+    function filtraDetalhe(filtro) {
+        const produtos = document.querySelectorAll(".produtos");
 
-        if (!detalhes.includes(valorFiltro) && valorFiltro != 'tudo') {
-            produto.style.display = "none";
-        } else {
-            produto.style.display = "grid";
+        for (let produto of produtos) {
+            let detalhes = produto.querySelector(".detalhes").textContent.toLowerCase();
+            let valorFiltro = filtro.toLowerCase();
+
+            if (!detalhes.includes(valorFiltro) && valorFiltro !== 'tudo') {
+                produto.style.display = "none";
+            } else {
+                produto.style.display = "grid";
+            }
         }
     }
-}
+})
