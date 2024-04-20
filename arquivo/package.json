@@ -1,7 +1,7 @@
 {
   "name": "arquivo",
   "version": "1.0.0",
-  "description": "",
+  "description": "Uma aplicação simples para interação do usuários com diferentes produtos. O intuito desse projeto é a prática de JavaScript, especificamente, uso de Promises, Requisições Fetch e manipulação de dados JSON.",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -9,5 +9,5 @@
   },
   "keywords": [],
   "author": "Gustavo André",
-  "license": "ISC"
+  "license": "MIT"
 }
