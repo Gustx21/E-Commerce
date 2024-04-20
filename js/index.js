@@ -8,24 +8,21 @@ async function consultaDados() {
         descricao.forEach((info) => {
             const produtoDiv = document.createElement('div');
             produtoDiv.classList.add('produtos');
-            
-            produtoDiv.innerHTML += 
-            `<img src="${info.imagem}" alt="imagem" class="img-produto">
+
+            produtoDiv.innerHTML +=
+                `
+                <img src="${info.imagem}" alt="imagem" class="img-produto">
                 <div class="conteudo">
                     <h1 class="titulo">${info.nome} - ${info.marca}</h1>
-                    <ul type="circle" class="detalhe"></ul>
+                    <p>${info.categoria}</p>
+                    <!-- <ul class="detalhes"></ul> -->
                 </div>
-                <p class="preco">${info.valor}</p>`
+                `
             ;
 
-            let detalheUl = produtoDiv.querySelector('.detalhe');
+            const detalheUl = produtoDiv.querySelector('.detalhes');
 
-            info.detalhes.forEach((detalhe) => {
-                let li = document.createElement('li');
-                li.textContent = detalhe;
-
-                detalheUl.appendChild(li);
-            });
+            // info.detalhes.forEach((detalhe) => {const li = document.createElement('li'); li.textContent = detalhe; detalheUl.appendChild(li);});
 
             dadosProdutos.appendChild(produtoDiv);
         });
@@ -34,7 +31,7 @@ async function consultaDados() {
         dadosProdutos.innerHTML = `<h2 class="erro">Houve erro no carregamento do código: ${error}</h2>`;
     } finally {
         console.log("Codigo finalizado.");
-    };
+    }
 };
 
 consultaDados();
@@ -56,28 +53,29 @@ botaoPesquisa.addEventListener("click", () => {
                 resultado.style.display = "none";
             }
         }
-    };
+    } else {
+        resultado.style.display = "grid";
+    }
 });
 
 const categoriaBTN = document.querySelectorAll('.botaoPesquisa');
 
 categoriaBTN.forEach((valores) => {
     let nomeDetalhe = valores.getAttribute('name');
-
     valores.addEventListener("click", () => filtraDetalhe(nomeDetalhe))
+})
 
-    function filtraDetalhe(filtro) {
-        const produtos = document.querySelectorAll(".produtos");
+function filtraDetalhe(filtro) {
+    const produtos = document.querySelectorAll(".produtos");
 
-        for (let produto of produtos) {
-            let detalhes = produto.querySelector(".detalhe").textContent.toLowerCase();
-            let valorFiltro = filtro.toLowerCase();
+    for (let produto of produtos) {
+        let detalhes = produto.querySelector(".detalhes").textContent.toLowerCase();
+        let valorFiltro = filtro.toLowerCase();
 
-            if (!detalhes.includes(valorFiltro) && valorFiltro !== 'tudo') {
-                produto.style.display = "none";
-            } else {
-                produto.style.display = "grid";
-            }
+        if (!detalhes.includes(valorFiltro) && valorFiltro != 'tudo') {
+            produto.style.display = "none";
+        } else {
+            produto.style.display = "grid";
         }
     }
-})
+}
