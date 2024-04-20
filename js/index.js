@@ -64,13 +64,13 @@ const categoriaBTN = document.querySelectorAll('.botaoPesquisa');
 categoriaBTN.forEach((valores) => {
     let nomeDetalhe = valores.getAttribute('name');
 
-    valores.addEventListener('click', filtraDetalhe(nomeDetalhe))
+    valores.addEventListener("click", () => filtraDetalhe(nomeDetalhe))
 
     function filtraDetalhe(filtro) {
         const produtos = document.querySelectorAll(".produtos");
 
         for (let produto of produtos) {
-            let detalhes = produto.querySelector(".detalhes").textContent.toLowerCase();
+            let detalhes = produto.querySelector(".detalhe").textContent.toLowerCase();
             let valorFiltro = filtro.toLowerCase();
 
             if (!detalhes.includes(valorFiltro) && valorFiltro !== 'tudo') {
