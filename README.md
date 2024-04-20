@@ -1,10 +1,12 @@
-# Projeto de Cadastro de Usuários
- Página de Cadastro de dados de Usuários inseridos no HTML. Uma aplicação simples para empresas que precisam armazenar dados de usuários. O intuito desse projeto é a prática de JavaScript, especificamente, uso de Promises e suas funcionalidade.
+# Projeto de E-Commerce
+ Página de Loja de Roupa no HTML. Uma aplicação simples para interação do usuários com diferentes produtos. O intuito desse projeto é a prática de JavaScript, especificamente, uso de Promises, Requisições Fetch e manipulação de dados JSON.
 
 ## Tecnologia⚡
 * JavaScript
 * HTML
 * CSS
+* JSON
+* HTTP
 
 ## Contribuição😊
  Contribuições são bem-vindas! Sinta-se à vontade para melhorar a estrutura, adicionar funcionalidade ou corrigir qualquer problema identificado.
