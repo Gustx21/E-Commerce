@@ -10,14 +10,12 @@ async function consultaDados() {
             produtoDiv.classList.add('produtos');
 
             produtoDiv.innerHTML +=
-                `
-                <img src="${info.imagem}" alt="imagem" class="img-produto">
+                `<img src="${info.imagem}" alt="imagem" class="img-produto">
                 <div class="conteudo">
                     <h1 class="titulo">${info.nome} - ${info.marca}</h1>
                     <p>${info.categoria}</p>
                     <!-- <ul class="detalhes"></ul> -->
-                </div>
-                `
+                </div>`
             ;
 
             const detalheUl = produtoDiv.querySelector('.detalhes');
@@ -30,7 +28,7 @@ async function consultaDados() {
     } catch (error) {
         dadosProdutos.innerHTML = `<h2 class="erro">Houve erro no carregamento do código: ${error}</h2>`;
     } finally {
-        console.log("Codigo finalizado.");
+        console.log(URL.status);
     }
 };
 
