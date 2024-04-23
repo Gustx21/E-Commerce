@@ -13,15 +13,17 @@ async function consultaDados() {
                 `<img src="${info.imagem}" alt="imagem" class="img-produto">
                 <div class="conteudo">
                     <h1 class="titulo">${info.nome} - ${info.marca}</h1>
-                    <p>${info.categoria}</p>
-                    <!-- <ul class="detalhes"></ul> -->
+                    <span class="detalhes"></span>
                 </div>`
             ;
 
-            const detalheUl = produtoDiv.querySelector('.detalhes');
+            const detalheParag = produtoDiv.querySelector('.detalhes');
+            const paragrafo = document.createElement('p');
 
-            // info.detalhes.forEach((detalhe) => {const li = document.createElement('li'); li.textContent = detalhe; detalheUl.appendChild(li);});
-
+            paragrafo.textContent = info.detalhes.join(' - ')
+            console.log(paragrafo)
+            
+            detalheParag.appendChild(paragrafo); 
             dadosProdutos.appendChild(produtoDiv);
         });
 
@@ -61,7 +63,7 @@ const categoriaBTN = document.querySelectorAll('.botaoPesquisa');
 categoriaBTN.forEach((valores) => {
     let nomeDetalhe = valores.getAttribute('name');
     valores.addEventListener("click", () => filtraDetalhe(nomeDetalhe))
-})
+});
 
 function filtraDetalhe(filtro) {
     const produtos = document.querySelectorAll(".produtos");
@@ -76,4 +78,4 @@ function filtraDetalhe(filtro) {
             produto.style.display = "grid";
         }
     }
-}
+};
