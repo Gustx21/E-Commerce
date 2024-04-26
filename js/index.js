@@ -29,11 +29,12 @@ async function consultaDados() {
     } catch (error) {
         dadosProdutos.innerHTML = `<h2 class="erro">Houve erro no carregamento do código: ${error}</h2>`;
     } finally {
-        console.log(`Resultado da requisição:
+        console.info(`Resultado da requisição:
         url: ${URL.url},
         code: ${URL.status} - ${URL.statusText},
         redirecionamento: ${URL.redirected},
-        tipo: ${URL.type}`);
+        tipo: ${URL.type}
+        funciona: ${URL.ok}`);
     }
 };
 
