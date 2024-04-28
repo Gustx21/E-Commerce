@@ -64,9 +64,11 @@ async function filtraPesquisa() {
     
         for (let resultado of infor) {
             let titulo = resultado.querySelector(".titulo").textContent.toLowerCase();
+            let genero = resultado.querySelector(".genero").textContent.toLowerCase();
+            let editora = resultado.querySelector(".editora").textContent.toLowerCase();
             let valorPesquisa = await pesquisa.value.toLowerCase();
-    
-            if (titulo.includes(valorPesquisa)) {
+
+            if (titulo.includes(valorPesquisa) || genero.includes(valorPesquisa) || editora.includes(valorPesquisa)) {
                 resultado.style.display = "grid";
             } else {
                 resultado.style.display = "none";
