@@ -87,11 +87,11 @@ nav {
 }
 
 /* SEÇÃO DO SERVIDOR */
-.commerce {
+.livros {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
-    gap: 60px;
+    gap: 80px;
     width: 100%;
     margin: 4rem 0;
 }
@@ -99,8 +99,10 @@ nav {
 .produtos {
     width: 500px;
     background-color: #f8f8f8;
-    border-radius: 10px;
-    border: 2px solid #344E41;
+    border-radius: 15px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #344E41;
     padding: 30px;
 }
 
@@ -114,16 +116,13 @@ nav {
     text-align: justify;
     grid-column: span 2;
     grid-row: 2;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
-.conteudo p {
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-
-.detalhes {
-    margin: 20px;
-    padding: 10px;
+p {
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .preco {
@@ -155,8 +154,10 @@ footer img {
     padding: 8px;
 }
 
-.rodape h3 {
+h3 {
     font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .rodape a {
