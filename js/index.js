@@ -1,34 +1,31 @@
 const dadosProdutos = document.querySelector('.livros');
 
 async function consultaDados() {
-    const URL = await fetch('http://localhost:3333/produtos');
-    const descricao = await URL.json();
-
     try {
+        const URL = await fetch('http://localhost:8000/produtos');
+        const descricao = await URL.json();
+
         descricao.forEach((info) => {
             const produtoDiv = document.createElement('div');
             produtoDiv.classList.add('produtos');
 
             produtoDiv.innerHTML +=
-                `<img src="${info.imagem}" alt="imagem" class="img-produto">
+                `<img src="${info.imagem}" alt="Imagem do livro" class="img-produto">
                 <div class="conteudo">
                     <h1 class="titulo">${info.nome}</h1>
-                    <p class="detalhes">${info.gênero}</p>
-                </div>`
+                    <p>${info.autor}</p>
+                    <hr>
+                    <p>${info.sinopse}</p>
+                    <p class="genero">${info.gênero}</p>
+                    <p>Editora: <strong>${info.editora}</strong</p>
+                </div>
+                `
             ;
 
             dadosProdutos.appendChild(produtoDiv);
         });
-
     } catch (error) {
-        dadosProdutos.innerHTML = `<h2 class="erro">Houve erro no carregamento do código: ${error}</h2>`;
-    } finally {
-        console.info(`Resultado da requisição:
-        url: ${URL.url},
-        code: ${URL.status} - ${URL.statusText},
-        redirecionamento: ${URL.redirected},
-        tipo: ${URL.type}
-        funciona: ${URL.ok}`);
+        console.error(error);
     }
 };
 
@@ -64,21 +61,18 @@ async function filtraPesquisa() {
 const categoriaBTN = document.querySelectorAll('.botaoPesquisa');
 
 categoriaBTN.forEach((valores) => {
-    let nomeDetalhe = valores.getAttribute('name');
-    valores.addEventListener("click", () => filtraDetalhe(nomeDetalhe))
+    let nomeGenero = valores.getAttribute('name');
+    valores.addEventListener("click", () => filtraDetalhe(nomeGenero))
 });
 
 function filtraDetalhe(filtro) {
     const produtos = document.querySelectorAll(".produtos");
 
     for (let produto of produtos) {
-        let detalhes = produto.querySelector(".detalhes").textContent.toLowerCase();
+        let generos = produto.querySelector(".genero").textContent.toLowerCase();
         let valorFiltro = filtro.toLowerCase();
-        console.log(produto)
-        console.log(detalhes)
-        console.log(valorFiltro)
 
-        if (!detalhes.includes(valorFiltro) && valorFiltro !== 'tudo') {
+        if (!generos.includes(valorFiltro) && valorFiltro !== 'tudo') {
             produto.style.display = "none";
         } else {
             produto.style.display = "grid";
