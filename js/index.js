@@ -25,7 +25,26 @@ async function consultaDados() {
             dadosProdutos.appendChild(produtoDiv);
         });
     } catch (error) {
-        console.error(error);
+        switch (error.message && error.name) {
+            case 'Failed to fetch':
+                console.error("Erro! Falha na resposta da requisição.");
+                break;
+            case 'Unexpected token "N", "Not Found" is not valid JSON':
+                console.error(`Erro! Caminho não encontrado.`);
+                break;
+            case 'TypeError':
+                console.error(`Erro de tipo: ${error.message}`);
+                break;
+            case 'Uncaught SyntaxError':
+                console.error(`Identificador inesperado: ${error.message}`);
+                break;
+            case 'ReferenceError':
+                console.error(`Erro de referência: ${error.message}`);
+                break;
+            default:
+                console.log(error.message);
+                break;
+        }
     }
 };
 
