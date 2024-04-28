@@ -2,7 +2,7 @@ const dadosProdutos = document.querySelector('.livros');
 
 async function consultaDados() {
     try {
-        const URL = await fetch('http://localhost:8000/produtos');
+        const URL = await fetch('http://127.0.0.1:8000/produtos');
         const descricao = await URL.json();
 
         descricao.forEach((info) => {
@@ -17,9 +17,8 @@ async function consultaDados() {
                     <hr>
                     <p>${info.sinopse}</p>
                     <p class="genero">${info.gênero}</p>
-                    <p>Editora: <strong>${info.editora}</strong</p>
-                </div>
-                `
+                    <p class="editora">Editora: <strong>${info.editora}</strong</p>
+                </div>`
             ;
 
             dadosProdutos.appendChild(produtoDiv);
@@ -59,7 +58,7 @@ async function filtraPesquisa() {
 
     try {
         if (pesquisa === "" || /[0-9]/.test(pesquisa)) {
-            throw new Error('Insira um valor válido!!!')
+            throw new Error('Insira um valor válido!!!');
         };
     
         for (let resultado of infor) {
