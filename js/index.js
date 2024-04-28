@@ -1,4 +1,4 @@
-const dadosProdutos = document.querySelector('.commerce');
+const dadosProdutos = document.querySelector('.livros');
 
 async function consultaDados() {
     const URL = await fetch('http://localhost:3333/produtos');
@@ -12,17 +12,11 @@ async function consultaDados() {
             produtoDiv.innerHTML +=
                 `<img src="${info.imagem}" alt="imagem" class="img-produto">
                 <div class="conteudo">
-                    <h1 class="titulo">${info.nome} - ${info.marca}</h1>
-                    <span class="detalhes"></span>
+                    <h1 class="titulo">${info.nome}</h1>
+                    <p class="detalhes">${info.gênero}</p>
                 </div>`
             ;
 
-            const detalheParag = produtoDiv.querySelector('.detalhes');
-            const paragrafo = document.createElement('p');
-
-            paragrafo.textContent = info.detalhes.join(' - ')
-            
-            detalheParag.appendChild(paragrafo); 
             dadosProdutos.appendChild(produtoDiv);
         });
 
@@ -80,11 +74,14 @@ function filtraDetalhe(filtro) {
     for (let produto of produtos) {
         let detalhes = produto.querySelector(".detalhes").textContent.toLowerCase();
         let valorFiltro = filtro.toLowerCase();
+        console.log(produto)
+        console.log(detalhes)
+        console.log(valorFiltro)
 
-        if (detalhes.includes(valorFiltro) && valorFiltro === 'tudo') {
-            produto.style.display = "grid";
-        } else {
+        if (!detalhes.includes(valorFiltro) && valorFiltro !== 'tudo') {
             produto.style.display = "none";
+        } else {
+            produto.style.display = "grid";
         }
     }
 };
