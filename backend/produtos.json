@@ -1,152 +1,128 @@
 {
   "produtos": [
     {
-      "imagem": "https://images.pexels.com/photos/11494673/pexels-photo-11494673.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "nome": "Vestido Longo Estampado com Decote em V",
-      "descricao": "Vestido longo confeccionado em viscose, com estampa floral vibrante, decote em V e fenda lateral. Possui alças finas ajustáveis e caimento fluido. Ideal para ocasiões especiais.",
-      "categoria": "Moda Feminina > Vestidos > Vestidos Longos",
-      "valor": 199.90,
-      "marca": "Raffaela",
-      "material": "Viscose",
-      "cor": "Branco com estampa floral",
-      "tamanhos": [
-        "P",
-        "M",
-        "G"
-      ],
-      "ocasioes": [
-        "Casual",
-        "Festa"
-      ],
-      "detalhes": [
-        "Fenda lateral",
-        "Decote em V",
-        "Alças finas ajustáveis"
-      ]
+      "imagem": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1573121747i/48725497.jpg",
+      "nome": "1984",
+      "autor": "George Orwell",
+      "editora": "Companhia das Letras",
+      "edição": 1,
+      "ano": 2009,
+      "páginas": 416,
+      "idioma": "Português",
+      "isbn": "978-85-359-0277-4",
+      "gênero": "Ficção Científica",
+      "sinopse": "Em 1984, Londres é uma cidade assombrada pela vigilância constante do Grande Irmão. Winston, um burocrata do Partido, começa a questionar a opressão que enfrenta e se rebela silenciosamente.",
+      "avaliacao": 4.7,
+      "numeroAvaliacoes": 120000,
+      "detalhes": {
+        "premiacao": "Nenhuma",
+        "adaptacoes": [
+          "1984 (filme de 1984)"
+        ]
+      }
     },
     {
-      "imagem": "https://images.pexels.com/photos/18090584/pexels-photo-18090584/free-photo-of-atraente-encantador-cativante-blusa.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "nome": "Blusa Cropped Lana Del Rey",
-      "descricao": "Blusa cropped confeccionada em algodão, com frase da Lana Del Rey. Possui mangas curtas e gola alta. Ideal para o dia a dia.",
-      "categoria": "Moda Feminina > Blusas > Blusas Cropped",
-      "valor": 129.90,
-      "marca": "Star",
-      "material": "Algodão",
-      "cor": "Bege com frase",
-      "tamanhos": [
-        "P",
-        "M",
-        "G"
-      ],
-      "ocasioes": [
-        "Casual",
-        "Balada"
-      ],
-      "detalhes": [
-        "Amarração frontal",
-        "Gola alta",
-        "Mangas curtas"
-      ]
+      "imagem": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1401466899i/3143104.jpg",
+      "nome": "O Pequeno Príncipe",
+      "autor": "Antoine de Saint-Exupéry",
+      "editora": "Geração Editorial",
+      "edição": 2,
+      "ano": 2015,
+      "páginas": 96,
+      "idioma": "Português",
+      "isbn": "978-85-8130-799-8",
+      "gênero": "Literatura Infantojuvenil",
+      "sinopse": "Um piloto perdido no deserto encontra um pequeno príncipe que lhe conta suas aventuras pelo universo, ensinando sobre o amor e a amizade.",
+      "avaliacao": 4.9,
+      "numeroAvaliacoes": 250000,
+      "detalhes": {
+        "premiacao": "Nenhuma",
+        "adaptacoes": [
+          "O Pequeno Príncipe (filme de 2015)"
+        ]
+      }
     },
     {
-      "imagem": "https://images.pexels.com/photos/18797624/pexels-photo-18797624/free-photo-of-mulher-livros-padronizar-padrao.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "nome": "Vestido Longo com Estampado Floral",
-      "descricao": "Blusa cropped confeccionada em algodão, com decote em V e amarração frontal. Possui mangas bufantes e caimento leve. Ideal para o dia a dia.",
-      "categoria": "Moda Feminina > Vestidos > Vestidos Longos",
-      "valor": 129.90,
-      "marca": "Dani Santtiago",
-      "material": "Algodão",
-      "cor": "Azul com estampa floral",
-      "tamanhos": [
-        "P",
-        "M",
-        "G"
-      ],
-      "ocasioes": [
-        "Casual",
-        "Balada"
-      ],
-      "detalhes": [
-        "Amarração frontal",
-        "Decote em V",
-        "Mangas bufantes"
-      ]
+      "imagem": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1348286455i/82888.jpg",
+      "nome": "Dom Casmurro",
+      "autor": "Machado de Assis",
+      "editora": "Penguin Companhia",
+      "edição": 1,
+      "ano": 2012,
+      "páginas": 256,
+      "idioma": "Português",
+      "isbn": "978-85-63560-21-6",
+      "gênero": "Romance",
+      "sinopse": "Bentinho e Capitu são amigos de infância que acabam se casando. Mas a suspeita de traição de Capitu atormenta Bentinho até o fim de seus dias.",
+      "avaliacao": 4.5,
+      "numeroAvaliacoes": 80000,
+      "detalhes": {
+        "premiacao": "Nenhuma",
+        "adaptacoes": [
+          "Dom Casmurro (minissérie de 2008)"
+        ]
+      }
     },
     {
-      "imagem": "https://images.pexels.com/photos/6311332/pexels-photo-6311332.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "nome": "Moletom Branco",
-      "descricao": "Blusa feminina confeccionada em viscose leve e fluida, com decote em V valorizando o colo e babados nas mangas e barra para um toque romântico e feminino. Perfeita para o dia a dia ou ocasiões especiais.",
-      "categoria": "Moda Masculina > Moletom > Moletom Branco",
-      "valor": 99.90,
-      "marca": "Tommy",
-      "material": "Moletom",
-      "cor": "Branco",
-      "tamanhos": [
-        "P",
-        "M",
-        "G"
-      ],
-      "ocasiões": [
-        "Casual",
-        "Frio",
-        "Dia a Dia"
-      ],
-      "detalhes": [
-        "Decote em V",
-        "Babados nas mangas e barra",
-        "Caimento leve e solto"
-      ]
+      "imagem": "https://www.bing.com/th?id=OPHS.ASmJ1%2bV512WlNw474C474&o=5&pid=21.1&w=136&h=136&qlt=100&dpr=1",
+      "nome": "A Revolução dos Bichos",
+      "autor": "George Orwell",
+      "editora": "Companhia das Letras",
+      "edição": 1,
+      "ano": 2007,
+      "páginas": 152,
+      "idioma": "Português",
+      "isbn": "978-85-359-0963-9",
+      "gênero": "Ficção",
+      "sinopse": "Os animais de uma fazenda se revoltam contra seu dono humano, estabelecendo uma sociedade onde todos os animais são iguais. Mas alguns são mais iguais que outros...",
+      "avaliacao": 4.6,
+      "numeroAvaliacoes": 90000,
+      "detalhes": {
+        "premiacao": "Nenhuma",
+        "adaptacoes": [
+          "A Revolução dos Bichos (filme de 1954)",
+          "A Revolução dos Bichos (filme de 1999)"
+        ]
+      }
     },
     {
-      "imagem": "https://images.pexels.com/photos/1462637/pexels-photo-1462637.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "nome": "Camisa Casual Listrada Azul",
-      "descricao": "Camisa polo masculina confeccionada em piquet 100% algodão, com gola polo clássica e mangas curtas. Ideal para o dia a dia, trabalho ou lazer.",
-      "categoria": "Moda Feminina > Camisas Azul > Camisas Listrada",
-      "valor": 129.90,
-      "marca": "Vitorie",
-      "material": "Algodão Piquet",
-      "cor": "Azul Claro",
-      "tamanhos": [
-        "P",
-        "M",
-        "G",
-        "GG"
-      ],
-      "ocasiões": [
-        "Casual",
-        "Trabalho",
-        "Dia a Dia"
-      ],
-      "detalhes": [
-        "Gola polo canelada",
-        "Manga curta com canelado no punho",
-        "Botões de madrepérola",
-        "Caimento slim fit"
-      ]
+      "imagem": "https://th.bing.com/th?id=ODL.18a212ac138f2233898e56ebf9ca281a&w=155&h=199&c=12&rs=1&qlt=99&pcl=faf9f7&o=6&pid=13.1",
+      "nome": "Maus",
+      "autor": "Art Spiegelman",
+      "editora": "Quadrinhos na Cia",
+      "edição": 1,
+      "ano": 2010,
+      "páginas": 296,
+      "idioma": "Português",
+      "isbn": "978-85-359-1507-4",
+      "gênero": "História em Quadrinhos",
+      "sinopse": "Maus é a história de Vladek Spiegelman, sobrevivente de Auschwitz, narrada por ele próprio ao filho Art. O livro é considerado um clássico contemporâneo das histórias em quadrinhos.",
+      "avaliacao": 4.9,
+      "numeroAvaliacoes": 85000,
+      "detalhes": {
+        "premiacao": "Prêmio Pulitzer de 1992",
+        "adaptacoes": ["Sem adaptações"]
+      }
     },
     {
-      "imagem": "https://images.pexels.com/photos/428338/pexels-photo-428338.jpeg?auto=compress&cs=tinysrgb&w=600m/file/br-11134211-7qukw-lf31gih5p2azc1",
-      "nome": "Camiseta Culprit",
-      "descricao": "Gato andando sobre cimento fresco representando um status http de criação.",
-      "categoria": "Moda Feminina > Camiseta Cinza > Camiseta Casual",
-      "valor": 0.99,
-      "marca": "Culprit Appart",
-      "material": "Pelo",
-      "cor": "Branco com estampa floral",
-      "tamanhos": [
-        "P",
-        "M",
-        "G"
-      ],
-      "ocasioes": [
-        "Casual",
-        "Festa"
-      ],
-      "detalhes": [
-        "Fenda lateral",
-        "Decote em V",
-        "Alças finas ajustáveis"
-      ]
+      "imagem": "https://www.bing.com/th?id=OPHS.aWtmHId%2fP0DnZg474C474&o=5&pid=21.1&w=160&h=210&qlt=100&dpr=1",
+      "nome": "Cem Anos de Solidão",
+      "autor": "Gabriel García Márquez",
+      "editora": "Record",
+      "edição": 1,
+      "ano": 2017,
+      "páginas": 448,
+      "idioma": "Português",
+      "isbn": "978-85-01-10556-7",
+      "gênero": "Realismo Mágico",
+      "sinopse": "A obra conta a história da família Buendía, uma estirpe de solitários que habitam a mítica aldeia de Macondo. A narrativa é uma sucessão de episódios inverossímeis e fantásticos, num cenário encantado.",
+      "avaliacao": 4.7,
+      "numeroAvaliacoes": 130000,
+      "detalhes": {
+        "premiacao": "Prêmio Nobel de Literatura de 1982",
+        "adaptacoes": ["Sem adaptações"]
+      }
     }
+       
   ]
 }
