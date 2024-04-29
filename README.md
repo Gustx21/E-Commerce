@@ -1,5 +1,5 @@
 # Projeto de E-Commerce
- Página de Loja de Roupa no HTML. Uma aplicação simples para interação do usuários com diferentes produtos. O intuito desse projeto é a prática de JavaScript, especificamente, uso de Promises, Requisições Fetch e manipulação de dados JSON.
+ Página de Livros no HTML. Uma aplicação simples para interação do usuários e apresentação de diferentes produtos.
 
 ## Tecnologia⚡
 * JavaScript
@@ -8,10 +8,17 @@
 * JSON
 * HTTP
 
-## Contribuição😊
+## Ferramentas 
+* json-server
+
+## Objetivo
+ O intuito desse projeto é a prática de JavaScript, especificamente, uso de Promises, Requisições Fetch e manipulação de dados JSON.
+ 
+
+### Contribuição😊
  Contribuições são bem-vindas! Sinta-se à vontade para melhorar a estrutura, adicionar funcionalidade ou corrigir qualquer problema identificado.
 
-## Diretrizes de Contribuição📌
+### Diretrizes de Contribuição📌
 * Mantenha o código limpo, seguindo as melhoress práticas do JavaScript.
 * Adicione comentários explicativos para facilitar a compreensão.
 * Seja cordial e construtivo nas discussões sobre pull requests.
