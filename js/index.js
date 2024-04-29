@@ -25,24 +25,18 @@ async function consultaDados() {
             dadosProdutos.appendChild(produtoDiv);
         });
     } catch (error) {
-        switch (error.message && error.name) {
+        switch (error.message) {
             case 'Failed to fetch':
-                console.error("Erro! Falha na resposta da requisição.");
+                console.error("Erro! Falha na requisição da URL.");
                 break;
-            case 'Unexpected token "N", "Not Found" is not valid JSON':
-                console.error(`Erro! Caminho não encontrado.`);
+            case `Unexpected token 'N', "Not Found" is not valid JSON`:
+                console.error("Erro! Caminho do arquivo não encontrado.");
                 break;
-            case 'TypeError':
-                console.error(`Erro de tipo: ${error.message}`);
-                break;
-            case 'Uncaught SyntaxError':
-                console.error(`Identificador inesperado: ${error.message}`);
-                break;
-            case 'ReferenceError':
-                console.error(`Erro de referência: ${error.message}`);
+            case `Cannot read properties of null (reading 'appendChild')`:
+                console.error("Erro! Não é possível ler propriedades vazias.");
                 break;
             default:
-                console.log(error.message);
+                console.log(error.toString());
                 break;
         }
     }
@@ -57,20 +51,20 @@ botaoPesquisa.addEventListener("click", filtraPesquisa);
 async function filtraPesquisa() {
     const infor = document.querySelectorAll('.produtos');
     const pesquisa = document.getElementById('pesquisar');
-    
-        for (let resultado of infor) {
-            let titulo = resultado.querySelector(".titulo").textContent.toLowerCase();
-            let autor = resultado.querySelector(".autor").textContent.toLowerCase();
-            let genero = resultado.querySelector(".genero").textContent.toLowerCase();
-            let editora = resultado.querySelector(".editora").textContent.toLowerCase();
 
-            const valorPesquisa = await pesquisa.value.toLowerCase();
+    for (let resultado of infor) {
+        let titulo = resultado.querySelector(".titulo").textContent.toLowerCase();
+        let autor = resultado.querySelector(".autor").textContent.toLowerCase();
+        let genero = resultado.querySelector(".genero").textContent.toLowerCase();
+        let editora = resultado.querySelector(".editora").textContent.toLowerCase();
 
-            if (titulo.includes(valorPesquisa) || genero.includes(valorPesquisa) || editora.includes(valorPesquisa) || autor.includes(valorPesquisa)) {
-                resultado.style.display = "grid";
-            } else {
-                resultado.style.display = "none";
-            }
+        const valorPesquisa = await pesquisa.value.toLowerCase();
+
+        if (titulo.includes(valorPesquisa) || genero.includes(valorPesquisa) || editora.includes(valorPesquisa) || autor.includes(valorPesquisa)) {
+            resultado.style.display = "grid";
+        } else {
+            resultado.style.display = "none";
+        }
     }
 };
 
