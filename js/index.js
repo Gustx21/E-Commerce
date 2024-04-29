@@ -13,7 +13,7 @@ async function consultaDados() {
                 `<img src="${info.imagem}" alt="Imagem do livro" class="img-produto">
                 <div class="conteudo">
                     <h1 class="titulo">${info.nome}</h1>
-                    <p>${info.autor}</p>
+                    <p class="autor">${info.autor}</p>
                     <hr>
                     <p>${info.sinopse}</p>
                     <p class="genero">Gênero: <strong>${info.gênero}</strong></p>
@@ -63,11 +63,13 @@ async function filtraPesquisa() {
     
         for (let resultado of infor) {
             let titulo = resultado.querySelector(".titulo").textContent.toLowerCase();
+            let autor = resultado.querySelector(".autor").textContent.toLowerCase();
             let genero = resultado.querySelector(".genero").textContent.toLowerCase();
             let editora = resultado.querySelector(".editora").textContent.toLowerCase();
-            let valorPesquisa = await pesquisa.value.toLowerCase();
 
-            if (titulo.includes(valorPesquisa) || genero.includes(valorPesquisa) || editora.includes(valorPesquisa)) {
+            const valorPesquisa = await pesquisa.value.toLowerCase();
+
+            if (titulo.includes(valorPesquisa) || genero.includes(valorPesquisa) || editora.includes(valorPesquisa) || autor.includes(valorPesquisa)) {
                 resultado.style.display = "grid";
             } else {
                 resultado.style.display = "none";
