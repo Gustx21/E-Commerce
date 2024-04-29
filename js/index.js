@@ -16,7 +16,7 @@ async function consultaDados() {
                     <p>${info.autor}</p>
                     <hr>
                     <p>${info.sinopse}</p>
-                    <p class="genero">${info.gênero}</p>
+                    <p class="genero">Gênero: <strong>${info.gênero}</strong></p>
                     <p class="editora">Editora: <strong>${info.editora}</strong</p>
                 </div>`
             ;
