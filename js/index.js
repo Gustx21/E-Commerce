@@ -1,6 +1,7 @@
-const dadosProdutos = document.querySelector('.livros');
-
+// Requisição
 async function consultaDados() {
+    const dadosProdutos = document.querySelector('.livros');
+
     try {
         const URL = await fetch('http://127.0.0.1:8000/produtos');
         const descricao = await URL.json();
@@ -49,17 +50,13 @@ async function consultaDados() {
 
 consultaDados();
 
+// Barra de pesquisa
 const botaoPesquisa = document.querySelector('.btn');
 botaoPesquisa.addEventListener("click", filtraPesquisa);
 
 async function filtraPesquisa() {
     const infor = document.querySelectorAll('.produtos');
     const pesquisa = document.getElementById('pesquisar');
-
-    try {
-        if (pesquisa === "" || /[0-9]/.test(pesquisa)) {
-            throw new Error('Insira um valor válido!!!');
-        };
     
         for (let resultado of infor) {
             let titulo = resultado.querySelector(".titulo").textContent.toLowerCase();
@@ -74,15 +71,13 @@ async function filtraPesquisa() {
             } else {
                 resultado.style.display = "none";
             }
-        }
-    } catch (erro) {
-        console.error(erro)
     }
 };
 
-const categoriaBTN = document.querySelectorAll('.botaoPesquisa');
+// Botão de pesquisa
+const generoBTN = document.querySelectorAll('.botaoPesquisa');
 
-categoriaBTN.forEach((valores) => {
+generoBTN.forEach((valores) => {
     let nomeGenero = valores.getAttribute('name');
     valores.addEventListener("click", () => filtraDetalhe(nomeGenero))
 });
