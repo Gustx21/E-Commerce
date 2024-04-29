@@ -1,6 +1,7 @@
 {
   "produtos": [
     {
+      "id": 1,
       "imagem": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1573121747i/48725497.jpg",
       "nome": "1984",
       "autor": "George Orwell",
@@ -22,6 +23,7 @@
       }
     },
     {
+      "id": 2,
       "imagem": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1401466899i/3143104.jpg",
       "nome": "O Pequeno Príncipe",
       "autor": "Antoine de Saint-Exupéry",
@@ -43,6 +45,7 @@
       }
     },
     {
+      "id": 3,
       "imagem": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1348286455i/82888.jpg",
       "nome": "Dom Casmurro",
       "autor": "Machado de Assis",
@@ -64,6 +67,7 @@
       }
     },
     {
+      "id": 4,
       "imagem": "https://www.bing.com/th?id=OPHS.ASmJ1%2bV512WlNw474C474&o=5&pid=21.1&w=136&h=136&qlt=100&dpr=1",
       "nome": "A Revolução dos Bichos",
       "autor": "George Orwell",
@@ -86,6 +90,7 @@
       }
     },
     {
+      "id": 5,
       "imagem": "https://th.bing.com/th?id=ODL.18a212ac138f2233898e56ebf9ca281a&w=155&h=199&c=12&rs=1&qlt=99&pcl=faf9f7&o=6&pid=13.1",
       "nome": "Maus",
       "autor": "Art Spiegelman",
@@ -105,6 +110,7 @@
       }
     },
     {
+      "id": 6,
       "imagem": "https://www.bing.com/th?id=OPHS.aWtmHId%2fP0DnZg474C474&o=5&pid=21.1&w=160&h=210&qlt=100&dpr=1",
       "nome": "Cem Anos de Solidão",
       "autor": "Gabriel García Márquez",
