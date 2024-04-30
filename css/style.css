@@ -1,7 +1,8 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Times New Roman', Times, serif;
+
+    font-family: "Mate", serif;
 }
 
 .erro {
@@ -15,7 +16,7 @@
 }
 
 #logo {
-    background: linear-gradient(90deg,#A3B18A 5%, #588157 25%, #344E41 50%);
+    background: linear-gradient(90deg, #A3B18A 5%, #588157 25%, #344E41 50%);
     background-clip: text;
     color: transparent;
 }
