@@ -25,12 +25,12 @@ async function consultaDados() {
             dadosProdutos.appendChild(produtoDiv);
         });
     } catch (error) {
-        switch (error.message) {
-            case 'Failed to fetch':
-                console.error("Erro! Falha na requisição da URL.");
+        switch (error.toString()) {
+            case 'TypeError: Failed to fetch':
+                console.error("Erro de Tipo! Falha na requisição da URL.");
                 break;
-            case `Unexpected token 'N', "Not Found" is not valid JSON`:
-                console.error("Erro! Caminho do arquivo não encontrado.");
+            case `SyntaxError: Unexpected token 'N', "Not Found" is not valid JSON`:
+                console.error("Erro de Syntax! Caminho do arquivo não encontrado.");
                 break;
             case `Cannot read properties of null (reading 'appendChild')`:
                 console.error("Erro! Não é possível ler propriedades vazias.");
