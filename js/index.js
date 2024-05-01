@@ -3,8 +3,8 @@ async function consultaDados() {
     const dadosProdutos = document.querySelector('.livros');
 
     try {
-        const URL = await fetch('http://127.0.0.1:8000/produtos');
-        const descricao = await URL.json();
+        const url = await fetch('http://127.0.0.1:8000/produtos');
+        const descricao = await url.json();
 
         descricao.forEach((info) => {
             const produtoDiv = document.createElement('div');
@@ -27,7 +27,7 @@ async function consultaDados() {
     } catch (error) {
         switch (error.toString()) {
             case 'TypeError: Failed to fetch':
-                console.error("Erro de Tipo! Falha na requisição da URL.");
+                console.error("Erro de Tipo! Falha na requisição da url.");
                 break;
             case `SyntaxError: Unexpected token 'N', "Not Found" is not valid JSON`:
                 console.error("Erro de Syntax! Caminho do arquivo não encontrado.");
@@ -53,12 +53,12 @@ async function filtraPesquisa() {
     const pesquisa = document.getElementById('pesquisar');
 
     for (let resultado of infor) {
-        let titulo = resultado.querySelector(".titulo").textContent.toLowerCase();
-        let autor = resultado.querySelector(".autor").textContent.toLowerCase();
-        let genero = resultado.querySelector(".genero").textContent.toLowerCase();
-        let editora = resultado.querySelector(".editora").textContent.toLowerCase();
+        const titulo = resultado.querySelector(".titulo").textContent.toLowerCase();
+        const autor = resultado.querySelector(".autor").textContent.toLowerCase();
+        const genero = resultado.querySelector(".genero").textContent.toLowerCase();
+        const editora = resultado.querySelector(".editora").textContent.toLowerCase();
 
-        const valorPesquisa = await pesquisa.value.toLowerCase();
+        let valorPesquisa = await pesquisa.value.toLowerCase();
 
         if (titulo.includes(valorPesquisa) || genero.includes(valorPesquisa) || editora.includes(valorPesquisa) || autor.includes(valorPesquisa)) {
             resultado.style.display = "grid";
