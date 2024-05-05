@@ -7,10 +7,10 @@ async function consultaDados() {
         const descricao = await url.json();
 
         descricao.forEach((info) => {
-            const produtoDiv = document.createElement('div');
-            produtoDiv.classList.add('produtos');
+            const produtoArticle = document.createElement('article');
+            produtoArticle.classList.add('produtos');
 
-            produtoDiv.innerHTML +=
+            produtoArticle.innerHTML +=
                 `<img src="${info.imagem}" alt="Imagem do livro" class="img-produto">
                 <div class="conteudo">
                     <h1 class="titulo">${info.nome}</h1>
@@ -22,7 +22,7 @@ async function consultaDados() {
                 </div>`
             ;
 
-            dadosProdutos.appendChild(produtoDiv);
+            dadosProdutos.appendChild(produtoArticle);
         });
     } catch (error) {
         switch (error.toString()) {

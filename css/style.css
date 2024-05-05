@@ -96,20 +96,18 @@ nav {
 /* SEÇÃO DO SERVIDOR */
 .livros {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
     justify-content: center;
-    gap: 3rem;
+    row-gap: 3em;
+    column-gap: 1rem;
     width: 100%;
     margin: 4rem 0;
 }
 
 .produtos {
-    width: 500px;
-    background-color: #f8f8f8;
-    border-radius: 15px;
-    border-width: 3px;
-    border-style: solid;
-    border-color: #344E41;
+    width: 360px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
     padding: 30px;
 }
 

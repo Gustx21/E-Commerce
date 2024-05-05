@@ -106,7 +106,9 @@
       "numeroAvaliacoes": 85000,
       "detalhes": {
         "premiacao": "Prêmio Pulitzer de 1992",
-        "adaptacoes": ["Sem adaptações"]
+        "adaptacoes": [
+          "Sem adaptações"
+        ]
       }
     },
     {
@@ -126,8 +128,143 @@
       "numeroAvaliacoes": 130000,
       "detalhes": {
         "premiacao": "Prêmio Nobel de Literatura de 1982",
-        "adaptacoes": ["Sem adaptações"]
+        "adaptacoes": [
+          "Sem adaptações"
+        ]
       }
-    }   
+    },
+    {
+      "id": 7,
+      "imagem": "https://th.bing.com/th/id/OIP.J42Ut2TtZRDOjUBsBS916QHaHa?w=168&h=180&c=7&r=0&o=5&pid=1.7",
+      "nome": "Ao Farol",
+      "autor": "Virginia Woolf",
+      "editora": "Hogarth Press",
+      "edição": 1,
+      "ano": 1927,
+      "páginas": 209,
+      "idioma": "Inglês",
+      "isbn": "978-0-15-690739-2",
+      "gênero": "Modernismo",
+      "sinopse": "A narrativa segue a família Ramsay e os verões passados na sua casa de praia, na ilha de Skye. Mais do que a história que é contada, a leitura vale a pena pelas suas reflexões sobre a infância, a memória e as relações humanas.",
+      "avaliacao": 4.1,
+      "numeroAvaliacoes": 60000,
+      "detalhes": {
+        "premiacao": "N/A",
+        "adaptacoes": [
+          "Adaptação para o cinema em 1983"
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "imagem": "https://a-static.mlcdn.com.br/800x560/livro-a-casa-dos-espiritos-isabel-allende/magazineluiza/237339800/f8828c4df6eee4af3953d454f3744868.jpg",
+      "nome": "A casa dos espíritos",
+      "autor": "Isabel Allende",
+      "editora": "Plaza & Janés",
+      "edição": 1,
+      "ano": 1982,
+      "páginas": 368,
+      "idioma": "Espanhol",
+      "isbn": "978-0-06-095130-6",
+      "gênero": "Realismo Mágico",
+      "sinopse": "É acompanhando os integrantes da família Trueba que mergulhamos em três gerações que precisam lidar com os conflitos, amores, ideologias políticas, traições, lutos e tudo o que a vida reserva.",
+      "avaliacao": 4.2,
+      "numeroAvaliacoes": 190000,
+      "detalhes": {
+        "premiacao": "N/A",
+        "adaptacoes": [
+          "Adaptação para o cinema em 1993"
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "imagem": "https://th.bing.com/th/id/OIP.pcycBP5H40cq8lQUR-TKhwHaKp?w=185&h=266&c=7&r=0&o=5&pid=1.7",
+      "nome": "Memórias póstumas de Brás Cubas",
+      "autor": "Machado de Assis",
+      "editora": "Garnier",
+      "edição": 1,
+      "ano": 1881,
+      "páginas": 160,
+      "idioma": "Português",
+      "isbn": "978-85-359-0277-4",
+      "gênero": "Realismo",
+      "sinopse": "Aqui acompanhamos Brás Cubas, um sujeito vindo de uma família rica que leva uma vida bastante controversa, com opiniões e comportamentos pouco nobres.",
+      "avaliacao": 4.3,
+      "numeroAvaliacoes": 50000,
+      "detalhes": {
+        "premiacao": "N/A",
+        "adaptacoes": [
+          "Adaptação para o cinema em 2001"
+        ]
+      }
+    },
+    {
+      "id": 11,
+      "imagem": "https://th.bing.com/th/id/OIP.NGofr7d8y6lcAUn2SeXXPgHaLZ?w=185&h=285&c=7&r=0&o=5&pid=1.7",
+      "nome": "To Kill a Mockingbird",
+      "autor": "Harper Lee",
+      "editora": "J. B. Lippincott & Co.",
+      "edição": 1,
+      "ano": 1960,
+      "páginas": 281,
+      "idioma": "Inglês",
+      "isbn": "978-0-06-093546-7",
+      "gênero": "Southern Gothic, Bildungsroman",
+      "sinopse": "Poderoso em sua simplicidade, um clássico da luta contra a injustiça.",
+      "avaliacao": 4.3,
+      "numeroAvaliacoes": 4000000,
+      "detalhes": {
+        "premiacao": "Prêmio Pulitzer de Ficção de 1961",
+        "adaptacoes": [
+          "Adaptação para o cinema em 1962"
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "imagem": "https://th.bing.com/th/id/OIP.nMfZ8whHO1AMGBQBE7dSfwDIEs?w=185&h=278&c=7&r=0&o=5&pid=1.7",
+      "nome": "Moby Dick",
+      "autor": "Herman Melville",
+      "editora": "Harper & Brothers",
+      "edição": 1,
+      "ano": 1851,
+      "páginas": 635,
+      "idioma": "Inglês",
+      "isbn": "978-0-14-243724-7",
+      "gênero": "Romance, Aventura",
+      "sinopse": "Uma obra-prima da literatura americana sobre a obsessão de um homem com uma baleia branca.",
+      "avaliacao": 3.5,
+      "numeroAvaliacoes": 2000000,
+      "detalhes": {
+        "premiacao": "N/A",
+        "adaptacoes": [
+          "Adaptação para o cinema em 1956"
+        ]
+      }
+    },
+    {
+      "id": 12,
+      "imagem": "https://th.bing.com/th/id/OIP.wiZ0_3KxXPz2Yh-c125SjgHaKd?w=185&h=262&c=7&r=0&o=5&pid=1.7",
+      "nome": "Orgulho e Preconceito",
+      "autor": "Jane Austen",
+      "editora": "T. Egerton",
+      "edição": 1,
+      "ano": 1813,
+      "páginas": 279,
+      "idioma": "Inglês",
+      "isbn": "978-1-85326-000-2",
+      "gênero": "Romance",
+      "sinopse": "Um retrato agudo e espirituoso das relações sociais no século XIX na Inglaterra.",
+      "avaliacao": 4.3,
+      "numeroAvaliacoes": 2500000,
+      "detalhes": {
+        "premiacao": "N/A",
+        "adaptacoes": [
+          "Adaptação para o cinema em 2005"
+        ]
+      }
+    }
+    
   ]
 }
