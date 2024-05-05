@@ -22,7 +22,6 @@
 }
 
 body {
-    row-gap: 10px;
     margin-right: 5px;
     margin-left: 5px;
 }
@@ -52,6 +51,7 @@ nav {
     border-bottom-color: #344E41;
     margin-top: 10px;
     margin-bottom: 10px;
+    overflow-x: scroll;
 }
 
 .botaoPesquisa {
@@ -63,6 +63,7 @@ nav {
     background-color: #DAD7CD;
     color: #000;
     transition: 0.5s;
+    border: none;
 }
 
 .botaoPesquisa:hover {
@@ -101,7 +102,7 @@ nav {
     row-gap: 3em;
     column-gap: 1rem;
     width: 100%;
-    margin: 4rem 0;
+    margin: 3rem 0;
 }
 
 .produtos {
@@ -178,4 +179,47 @@ h3 {
 
 #rodape {
     width: 70%;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .botao-pesquisa {
+        column-gap: 20px;
+    }
+    
+    /* SEÇÃO DO SERVIDOR */
+    .livros {
+        grid-template-columns: auto auto;
+        gap: 1.5rem;
+    }
+
+    .produtos {
+        width: 380px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    nav {
+        flex-direction: column;
+    }
+    
+    .guias {
+        margin-top: 10px;
+        margin-bottom: 15px;
+        padding: 0;
+    }
+
+    /* SEÇÃO DO SERVIDOR */
+    .livros {
+        grid-template-columns: auto;
+    }
+
+    .produtos {
+        width: 500px;
+    }
+
+    /* RODAPÉ */
+    footer {
+        grid-template-columns: auto;
+    }
 }
