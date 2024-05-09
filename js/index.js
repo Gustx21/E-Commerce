@@ -17,6 +17,7 @@ async function consultaDados() {
                     <p class="autor">${info.autor}</p>
                     <hr>
                     <p class="genero">Gênero: <strong>${info.gênero}</strong></p>
+                    <a href="especifico/livro.html?id=${info.id}">Ver detalhes do livro</a>
                 </div>`
             ;
 
