@@ -11,19 +11,18 @@ async function consultaDados() {
             produtoArticle.classList.add('produtos');
 
             produtoArticle.innerHTML +=
-                `<img src="${info.imagem}" alt="Imagem do livro" class="img-produto">
+                `<img src="${info.imagem}" alt="Imagem do livro ${info.nome}" class="img-produto">
                 <div class="conteudo">
                     <h1 class="titulo">${info.nome}</h1>
                     <p class="autor">${info.autor}</p>
                     <hr>
-                    <p>${info.sinopse}</p>
                     <p class="genero">Gênero: <strong>${info.gênero}</strong></p>
-                    <p class="editora">Editora: <strong>${info.editora}</strong</p>
                 </div>`
             ;
 
             dadosProdutos.appendChild(produtoArticle);
         });
+
     } catch (error) {
         switch (error.toString()) {
             case 'TypeError: Failed to fetch':
@@ -56,11 +55,10 @@ async function filtraPesquisa() {
         const titulo = resultado.querySelector(".titulo").textContent.toLowerCase();
         const autor = resultado.querySelector(".autor").textContent.toLowerCase();
         const genero = resultado.querySelector(".genero").textContent.toLowerCase();
-        const editora = resultado.querySelector(".editora").textContent.toLowerCase();
 
         let valorPesquisa = await pesquisa.value.toLowerCase();
 
-        if (titulo.includes(valorPesquisa) || genero.includes(valorPesquisa) || editora.includes(valorPesquisa) || autor.includes(valorPesquisa)) {
+        if (titulo.includes(valorPesquisa) || genero.includes(valorPesquisa) || autor.includes(valorPesquisa)) {
             resultado.style.display = "grid";
         } else {
             resultado.style.display = "none";
