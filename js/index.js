@@ -42,10 +42,11 @@ async function consultaDados() {
     }
 };
 
-consultaDados();
+// Após a página carregar, chama a função
+document.addEventListener("DOMContentLoaded",consultaDados);
 
 // Barra de pesquisa
-const botaoPesquisa = document.querySelector('.btn');
+const botaoPesquisa = document.getElementById('btn');
 botaoPesquisa.addEventListener("click", filtraPesquisa);
 
 async function filtraPesquisa() {
@@ -68,17 +69,18 @@ async function filtraPesquisa() {
 };
 
 // Botão de pesquisa
-const generoBTN = document.querySelectorAll('.botaoPesquisa');
+const generoBt = document.querySelectorAll('button');
 
-generoBTN.forEach((valores) => {
+generoBt.forEach((valores) => {
     let nomeGenero = valores.getAttribute('name');
     valores.addEventListener("click", () => filtraDetalhe(nomeGenero))
 });
 
 function filtraDetalhe(filtro) {
     const produtos = document.querySelectorAll(".produtos");
+    let produto = []
 
-    for (let produto of produtos) {
+    for (produto of produtos) {
         let generos = produto.querySelector(".genero").textContent.toLowerCase();
         let valorFiltro = filtro.toLowerCase();
 

@@ -54,7 +54,7 @@ nav {
     overflow-x: scroll;
 }
 
-.botaoPesquisa {
+.genero-botao {
     padding: 12px;
     margin: 20px 0;
     border-radius: 5px;
@@ -66,11 +66,11 @@ nav {
     border: none;
 }
 
-.botaoPesquisa:hover {
+.genero-botao:hover {
     background-color: #A3B18A;
 }
 
-.btn {
+#btn {
     background-color: #588157;
     border: none;
     border-radius: 10px;
@@ -82,7 +82,7 @@ nav {
     transition: .5s;
 }
 
-.btn:hover {
+#btn:hover {
     background-color: #344E41;
 }
 
@@ -148,6 +148,38 @@ p {
     border-radius: 10px;
     grid-column: span 2;
     grid-row: 1;
+    grid-area: img;
+}
+
+/* Parte do servidor da segunda página */
+#inforLivro {
+    display: grid;
+    justify-content: center;
+}
+
+.titulo-sec {
+    font-size: 32px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.livro {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 30px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 600px;
+    grid-template-rows: auto, 200px;
+    grid-template-areas: 
+    "img"
+    "div";
+}
+
+.img-livro {
+    width: 200px;
+    border-radius: 10px;
+    object-fit: contain;
     grid-area: img;
 }
 
