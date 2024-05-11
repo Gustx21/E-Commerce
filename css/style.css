@@ -33,7 +33,7 @@ nav {
     margin-bottom: 2rem;
 }
 
-.guias {
+a {
     color: #000;
     padding-top: 10px;
     text-decoration: none;
@@ -70,7 +70,7 @@ nav {
     background-color: #A3B18A;
 }
 
-#btn {
+.btn {
     background-color: #588157;
     border: none;
     border-radius: 10px;
@@ -82,7 +82,7 @@ nav {
     transition: .5s;
 }
 
-#btn:hover {
+.btn:hover {
     background-color: #344E41;
 }
 
