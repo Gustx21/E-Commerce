@@ -9,7 +9,7 @@ async function uniqueBook() {
         const dadosLivro = await url.json();
 
         // title do head
-        const head = document.getElementById("head");
+        const head = document.querySelector("head");
         const titlePag = document.createElement("title");
         titlePag.textContent = dadosLivro.nome;
 
@@ -38,12 +38,13 @@ async function uniqueBook() {
                     <p>Dados do ISBN: <strong>${dadosLivro.isbn}</strong></p>
                 </details>
             </div>`
+        ;
 
         inforLivro.appendChild(article);
 
     } catch (error) {
-        console.error(error)
+        console.error(error);
     }
 }
 
-uniqueBook()
+uniqueBook();
