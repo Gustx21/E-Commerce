@@ -26,10 +26,10 @@ async function uniqueBook() {
                 <p class="autor">${dadosLivro.autor}</p>
                 <hr>
                 <p>${dadosLivro.sinopse}</p>
-                <p class="genero">Gênero: <strong>${dadosLivro.gênero}</strong></p>
                 
                 <details>
                     <p>Editora: <em>${dadosLivro.editora}</em></p>
+                    <p class="genero">Gênero: <strong>${dadosLivro.gênero}</strong></p>
                     <p>Adaptações: <strong>${dadosLivro.detalhes.adaptacoes}</strong></p>
                     <p>Avaliação: ${dadosLivro.avaliacao}</p>
                     <p>Páginas: ${dadosLivro.páginas}</p>

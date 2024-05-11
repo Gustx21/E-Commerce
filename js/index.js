@@ -46,7 +46,7 @@ async function consultaDados() {
 document.addEventListener("DOMContentLoaded",consultaDados);
 
 // Barra de pesquisa
-const botaoPesquisa = document.getElementById('btn');
+const botaoPesquisa = document.querySelector('.btn');
 botaoPesquisa.addEventListener("click", filtraPesquisa);
 
 async function filtraPesquisa() {
@@ -78,9 +78,8 @@ generoBt.forEach((valores) => {
 
 function filtraDetalhe(filtro) {
     const produtos = document.querySelectorAll(".produtos");
-    let produto = []
 
-    for (produto of produtos) {
+    for (let produto of produtos) {
         let generos = produto.querySelector(".genero").textContent.toLowerCase();
         let valorFiltro = filtro.toLowerCase();
 
