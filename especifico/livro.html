@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mate:ital@0;1&display=swap" rel="stylesheet">
+
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -32,6 +34,21 @@
     </header>
 
     <section id="inforLivros"></section>
+
+    <form action="" method="post">
+        <label for="email">Insira seu e-mail</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="titulo">Título do comentário</label>
+        <input type="text" name="titulo" id="titulo" required>
+
+        <textarea name="comentario" id="comentario" cols="50" rows="10" required></textarea>
+
+        <button type="submit" id="enviar">Enviar</button>
+    </form>
+    <article id="comentarios">
+        <h1>Comentários</h1>
+    </article>
 
     <footer>
         <div id="rodape">
