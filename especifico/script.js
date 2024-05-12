@@ -1,23 +1,23 @@
-async function uniqueBook() {
+const id = new URLSearchParams(window.location.search).get('id');
+
+// CARREGANDO LIVRO ESPECÍFICO
+async function livroEspecifico() {
     const inforLivro = document.getElementById("inforLivros");
 
     try {
-        let params = new URLSearchParams(window.location.search);
-        let idDoLivro = params.get('id');
-
-        const url = await fetch(`http://127.0.0.1:8000/produtos/${idDoLivro}`);
+        const url = await fetch(`http://127.0.0.1:8000/produtos/${id}`);
         const dadosLivro = await url.json();
 
-        // title do head
+        // TITULO DO HEAD
         const head = document.querySelector("head");
-        const titlePag = document.createElement("title");
-        titlePag.textContent = dadosLivro.nome;
+        const titleNome = document.createElement("title");
+        titleNome.textContent = dadosLivro.nome;
 
-        head.appendChild(titlePag);
+        head.appendChild(titleNome);
 
-        // Parte do servidor
+        // CARREGANDO OS DADOS DO LIVRO
         const article = document.createElement("article");
-        article.className = 'livro';
+        article.classList.add('livro');
 
         article.innerHTML =
             `<img src="${dadosLivro.imagem}" alt="Imagem do livro ${dadosLivro.nome}" class="img-livro">
@@ -38,13 +38,72 @@ async function uniqueBook() {
                     <p>Dados do ISBN: <strong>${dadosLivro.isbn}</strong></p>
                 </details>
             </div>`
-        ;
+            ;
 
         inforLivro.appendChild(article);
 
     } catch (error) {
-        console.error(error);
+        switch (error.name) {
+            case 'TypeError':
+                console.error(`Erro de tipo! ${error.toString()}`);
+                break;
+            case 'ReferenceError':
+                console.error(`Erro de referência! ${error.toString()}`);
+                break;
+            case 'ErrorEvent':
+                console.error(`Erro de evento! ${error.toString()}`);
+                break;
+            case 'SyntaxError':
+                console.error(`Erro de syntax! ${error.toString()}`);
+                break;
+            case 'RangeError':
+                console.error(`Erro perigoso! ${error.toString()}`);
+                break;
+            default:
+                console.log(error.toString());
+                break;
+        }
     }
 }
 
-uniqueBook();
+document.addEventListener("DOMContentLoaded", livroEspecifico);
+
+// EVENTO DO BOTÃO DIRETAMENTE DOCUMENT
+document.getElementById("enviar").addEventListener("click", inseriComentarios);
+
+async function inseriComentarios(event) {
+    event.preventDefault();
+
+    const email = document.getElementById("email").value;
+    const titulo = document.getElementById("titulo").value;
+    const texto = document.getElementById("comentario").value;
+
+    await fetch("http://127.0.0.1:8080/comentarios",
+        {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ email, titulo, texto})
+        }
+    )
+}
+
+async function consultaComentarios() {
+    const comentarios = document.getElementById("comentarios");
+
+    const url = await fetch(`http://127.0.0.1:8080/comentarios/`);
+    const result = await url.json();
+
+    result.forEach(dados => {
+        const article = document.createElement("article");
+        
+        article.innerHTML +=
+            `<h3>${dados.titulo}</h3>
+            <q>${dados.texto}</q>`
+        ;
+        comentarios.appendChild(article);
+
+    });
+
+}
+
+document.addEventListener("DOMContentLoaded", consultaComentarios);

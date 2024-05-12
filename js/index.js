@@ -1,39 +1,65 @@
 // Requisição
 async function consultaDados() {
-    const dadosProdutos = document.querySelector('.livros');
+    const livros = document.querySelector('.livros');
 
     try {
         const url = await fetch('http://127.0.0.1:8000/produtos');
-        const descricao = await url.json();
+        const conteudo = await url.json();
 
-        descricao.forEach((info) => {
-            const produtoArticle = document.createElement('article');
-            produtoArticle.classList.add('produtos');
+        conteudo.forEach(info => {
+            const conteudoArticle = document.createElement('article');
+            conteudoArticle.classList.add('produtos');
 
-            produtoArticle.innerHTML +=
-                `<img src="${info.imagem}" alt="Imagem do livro ${info.nome}" class="img-produto">
-                <div class="conteudo">
-                    <h1 class="titulo">${info.nome}</h1>
-                    <p class="autor">${info.autor}</p>
-                    <hr>
-                    <p class="genero">Gênero: <strong>${info.gênero}</strong></p>
-                    <button class="btn"><a href="especifico/livro.html?id=${info.id}" target="_blank">Comprar</a></button>
-                </div>`
-            ;
+            const conteudoImg = document.createElement("img");
+            conteudoImg.src = info.imagem;
+            conteudoImg.alt = `Imagem do livro ${info.nome}`;
+            conteudoImg.className = "img-produto";
 
-            dadosProdutos.appendChild(produtoArticle);
+            const conteudoDiv = document.createElement("div");
+            conteudoDiv.classList.add("conteudo");
+
+            const h1 = document.createElement("h1");
+            h1.classList.add("titulo");
+            h1.textContent = info.nome;
+
+            const autorParag = document.createElement("p");
+            autorParag.classList.add("autor");
+            autorParag.textContent = info.autor;
+
+            const generoParag = document.createElement("p");
+            generoParag.classList.add("genero");
+            generoParag.textContent = `Gênero: ${info.gênero}`;
+
+            const link = document.createElement("a");
+            link.href = `especifico/livro.html?id=${info.id}`;
+            link.target = "_blank";
+            link.textContent = "Comprar";
+
+            const button = document.createElement("button");
+            button.classList.add("btn");
+            button.appendChild(link);
+
+            conteudoDiv.append(h1, autorParag, document.createElement("hr"), generoParag, button);
+            conteudoArticle.append(conteudoImg, conteudoDiv);
+            livros.appendChild(conteudoArticle);
         });
 
     } catch (error) {
-        switch (error.toString()) {
-            case 'TypeError: Failed to fetch':
-                console.error("Erro de Tipo! Falha na requisição da url.");
+        switch (error.name) {
+            case 'TypeError':
+                console.error(`Erro de tipo! ${error.toString()}`);
                 break;
-            case `SyntaxError: Unexpected token 'N', "Not Found" is not valid JSON`:
-                console.error("Erro de Syntax! Caminho do arquivo não encontrado.");
+            case 'ReferenceError':
+                console.error(`Erro de referência! ${error.toString()}`);
                 break;
-            case `Cannot read properties of null (reading 'appendChild')`:
-                console.error("Erro! Não é possível ler propriedades vazias.");
+            case 'ErrorEvent':
+                console.error(`Erro de evento! ${error.toString()}`);
+                break;
+            case 'SyntaxError':
+                console.error(`Erro de syntax! ${error.toString()}`);
+                break;
+            case 'RangeError':
+                console.error(`Erro perigoso! ${error.toString()}`);
                 break;
             default:
                 console.log(error.toString());
@@ -49,7 +75,7 @@ document.addEventListener("DOMContentLoaded",consultaDados);
 const botaoPesquisa = document.querySelector('.btn');
 botaoPesquisa.addEventListener("click", filtraPesquisa);
 
-async function filtraPesquisa() {
+function filtraPesquisa() {
     const infor = document.querySelectorAll('.produtos');
     const pesquisa = document.getElementById('pesquisar');
 
@@ -58,7 +84,7 @@ async function filtraPesquisa() {
         const autor = resultado.querySelector(".autor").textContent.toLowerCase();
         const genero = resultado.querySelector(".genero").textContent.toLowerCase();
 
-        let valorPesquisa = await pesquisa.value.toLowerCase();
+        let valorPesquisa = pesquisa.value.toLowerCase();
 
         if (titulo.includes(valorPesquisa) || genero.includes(valorPesquisa) || autor.includes(valorPesquisa)) {
             resultado.style.display = "grid";
@@ -69,15 +95,15 @@ async function filtraPesquisa() {
 };
 
 // Botão de pesquisa
-const generoBt = document.querySelectorAll('button');
+const generoBtn = document.querySelectorAll('button.genero-botao');
 
-generoBt.forEach((valores) => {
+generoBtn.forEach((valores) => {
     let nomeGenero = valores.getAttribute('name');
-    valores.addEventListener("click", () => filtraDetalhe(nomeGenero))
+    valores.addEventListener("click", () => filtraDetalhe(nomeGenero));
 });
 
 function filtraDetalhe(filtro) {
-    const produtos = document.querySelectorAll(".produtos");
+    const produtos = document.querySelectorAll("article.produtos");
 
     for (let produto of produtos) {
         let generos = produto.querySelector(".genero").textContent.toLowerCase();

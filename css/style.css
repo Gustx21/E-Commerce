@@ -1,7 +1,6 @@
 * {
     padding: 0;
     margin: 0;
-
     font-family: "Mate", serif;
 }
 
@@ -151,7 +150,7 @@ p {
     grid-area: img;
 }
 
-/* Parte do servidor da segunda página */
+/* PARTE DA SEGUNDA PÁGINA */
 #inforLivro {
     display: grid;
     justify-content: center;
@@ -183,6 +182,15 @@ p {
     grid-area: img;
 }
 
+#form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea, button {
+    width: fit-content;
+}
+
 /* RODAPÉ */
 footer {
     background-color: #f8f8f8;
@@ -197,7 +205,7 @@ footer img {
     padding: 8px;
 }
 
-h3 {
+.rodape h3 {
     font-size: 25px;
     margin-top: 20px;
     margin-bottom: 20px;
