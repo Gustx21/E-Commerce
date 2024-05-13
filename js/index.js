@@ -72,8 +72,8 @@ async function consultaDados() {
 document.addEventListener("DOMContentLoaded",consultaDados);
 
 // Barra de pesquisa
-const botaoPesquisa = document.querySelector('.btn');
-botaoPesquisa.addEventListener("click", filtraPesquisa);
+const barraPesquisa = document.querySelector('#pesquisar');
+barraPesquisa.addEventListener("input", filtraPesquisa);
 
 function filtraPesquisa() {
     const infor = document.querySelectorAll('.produtos');

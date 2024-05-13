@@ -10,8 +10,8 @@
     color: #f8f8f8;
 }
 
-.logo {
-    width: 55px;
+.icon {
+    width: 30px;
 }
 
 #logo {
@@ -86,7 +86,8 @@ a {
 }
 
 #pesquisar {
-    width: fit-content;
+    width: 180px;
+    height: 40px;
     padding: 8px;
     border: 2px solid #ccc;
     border-radius: 4px;
