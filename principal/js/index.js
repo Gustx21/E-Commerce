@@ -31,9 +31,9 @@ async function consultaDados() {
             generoParag.textContent = `Gênero: ${info.gênero}`;
 
             const link = document.createElement("a");
-            link.href = `especifico/livro.html?id=${info.id}`;
+            link.href = `../secundario/livro.html?id=${info.id}`;
             link.target = "_blank";
-            link.textContent = "Comprar";
+            link.textContent = "Ver detalhes";
 
             const button = document.createElement("button");
             button.classList.add("btn");
