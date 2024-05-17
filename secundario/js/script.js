@@ -34,7 +34,7 @@ async function livroEspecifico() {
                     <p>Dados do ISBN: <strong>${dadosLivro.isbn}</strong></p>
                 </details>
             </div>`
-            ;
+        ;
 
         inforLivro.appendChild(article);
 
