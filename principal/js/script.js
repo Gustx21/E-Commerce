@@ -35,11 +35,7 @@ async function consultaDados() {
             link.target = "_blank";
             link.textContent = "Ver detalhes";
 
-            const button = document.createElement("button");
-            button.classList.add("btn");
-            button.appendChild(link);
-
-            conteudoDiv.append(h1, autorParag, document.createElement("hr"), generoParag, button);
+            conteudoDiv.append(h1, autorParag, document.createElement("hr"), generoParag, link);
             conteudoArticle.append(conteudoImg, conteudoDiv);
             livros.appendChild(conteudoArticle);
         });
