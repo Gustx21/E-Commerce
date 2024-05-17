@@ -1,39 +1,20 @@
 // EVENTO DO BOTÃO DIRETAMENTE DOCUMENT
-document.getElementById("enviar").addEventListener("click", inseriComentarios);
+document.getElementById("enviar").addEventListener("click", inserirUser);
 
-async function inseriComentarios(event) {
-    event.preventDefault();
-
+async function inserirUser() {
     const email = document.getElementById("email").value;
-    const titulo = document.getElementById("titulo").value;
+    const nome = document.getElementById("nome").value;
     const texto = document.getElementById("comentario").value;
 
-    await fetch("http://127.0.0.1:8080/comentarios",
+    let response = await fetch("http://127.0.0.1:8080/usuários",
         {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ email, titulo, texto })
+            body: JSON.stringify({ email, nome, texto })
         }
     )
+
+    if (response.ok) {
+        console.log("Suave")
+    }
 }
-
-async function consultaComentarios() {
-    const comentarios = document.getElementById("comentarios");
-
-    const url = await fetch(`http://127.0.0.1:8080/comentarios/`);
-    const result = await url.json();
-
-    result.forEach(dados => {
-        const article = document.createElement("article");
-        
-        article.innerHTML +=
-            `<h3>${dados.titulo}</h3>
-            <q>${dados.texto}</q>`
-        ;
-        comentarios.appendChild(article);
-
-    });
-
-}
-
-document.addEventListener("DOMContentLoaded", consultaComentarios);
