@@ -3,10 +3,10 @@ async function consultaDados() {
     const livros = document.querySelector('.livros');
 
     try {
-        const url = await fetch('http://127.0.0.1:8000/produtos');
+        const url = await fetch('https://gustx21.github.io/E-Commerce/backend/produtos.json');
         const conteudo = await url.json();
 
-        conteudo.forEach(info => {
+        conteudo.produtos.forEach(info => {
             const conteudoArticle = document.createElement('article');
             conteudoArticle.classList.add('produtos');
 
