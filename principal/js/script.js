@@ -6,6 +6,8 @@ async function consultaDados() {
         const url = await fetch('https://gustx21.github.io/E-Commerce/backend/produtos.json');
         const conteudo = await url.json();
 
+        error(url);
+
         conteudo.produtos.forEach(info => {
             const conteudoArticle = document.createElement('article');
             conteudoArticle.classList.add('produtos');
