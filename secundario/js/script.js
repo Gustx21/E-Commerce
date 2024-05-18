@@ -1,3 +1,5 @@
+import { error } from "../../error/script.js";
+
 const id = new URLSearchParams(window.location.search).get('id');
 
 // CARREGANDO LIVRO ESPECÍFICO
@@ -7,6 +9,8 @@ async function livroEspecifico() {
     try {
         const url = await fetch(`https://gustx21.github.io/E-Commerce/backend/produtos.json`);
         const dadosLivro = await url.json();
+
+        error(url);
 
         // TITULO DO HEAD
         document.querySelector("title").innerText = dadosLivro.produtos[id].nome;
@@ -40,26 +44,7 @@ async function livroEspecifico() {
         inforLivro.appendChild(article);
 
     } catch (error) {
-        switch (error.name) {
-            case 'TypeError':
-                console.error(`Erro de tipo! ${error.toString()}`);
-                break;
-            case 'ReferenceError':
-                console.error(`Erro de referência! ${error.toString()}`);
-                break;
-            case 'ErrorEvent':
-                console.error(`Erro de evento! ${error.toString()}`);
-                break;
-            case 'SyntaxError':
-                console.error(`Erro de syntax! ${error.toString()}`);
-                break;
-            case 'RangeError':
-                console.error(`Erro perigoso! ${error.toString()}`);
-                break;
-            default:
-                console.log(error.toString());
-                break;
-        }
+        error(error);
     }
 }
 

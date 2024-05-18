@@ -1,4 +1,6 @@
-// EVENTO DO BOTÃO DIRETAMENTE DOCUMENT
+import { error } from "../../error/script.js";
+
+// Evento do botão diretamente document
 document.getElementById("enviar").addEventListener("click", inserirUser);
 
 async function inserirUser() {
@@ -14,7 +16,5 @@ async function inserirUser() {
         }
     )
 
-    if (response.ok) {
-        console.log("Suave")
-    }
+    error(response);
 }
