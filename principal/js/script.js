@@ -1,3 +1,5 @@
+import { error } from "../../error/script.js";
+
 // Requisição
 async function consultaDados() {
     const livros = document.querySelector('.livros');
@@ -14,7 +16,6 @@ async function consultaDados() {
 
             const conteudoImg = document.createElement("img");
             conteudoImg.src = info.imagem;
-            conteudoImg.alt = `Imagem do livro ${info.nome}`;
             conteudoImg.className = "img-produto";
 
             const conteudoDiv = document.createElement("div");
@@ -30,10 +31,8 @@ async function consultaDados() {
 
             const generoParag = document.createElement("p");
             generoParag.classList.add("genero");
-            generoParag.textContent = `Gênero: ${info.gênero}`;
 
             const link = document.createElement("a");
-            link.href = `../secundario/livro.html?id=${info.id}`;
             link.target = "_self";
             link.textContent = "Ver detalhes";
 
@@ -43,31 +42,12 @@ async function consultaDados() {
         });
 
     } catch (error) {
-        switch (error.name) {
-            case 'TypeError':
-                console.error(`Erro de tipo! ${error.toString()}`);
-                break;
-            case 'ReferenceError':
-                console.error(`Erro de referência! ${error.toString()}`);
-                break;
-            case 'ErrorEvent':
-                console.error(`Erro de evento! ${error.toString()}`);
-                break;
-            case 'SyntaxError':
-                console.error(`Erro de syntax! ${error.toString()}`);
-                break;
-            case 'RangeError':
-                console.error(`Erro perigoso! ${error.toString()}`);
-                break;
-            default:
-                console.log(error.toString());
-                break;
-        }
+        error(error);
     }
 };
 
 // Após a página carregar, chama a função
-document.addEventListener("DOMContentLoaded",consultaDados);
+document.addEventListener("DOMContentLoaded", consultaDados);
 
 // Barra de pesquisa
 const barraPesquisa = document.querySelector('#pesquisar');
