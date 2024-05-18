@@ -18,23 +18,24 @@ async function livroEspecifico() {
         article.innerHTML =
             `<img src="${dadosLivro.imagem}" alt="Imagem do livro ${dadosLivro.nome}" class="img-livro">
             <div class="conteudo">
-                <h1 class="titulo-sec">${dadosLivro.nome}</h1>
-                <p class="autor">${dadosLivro.autor}</p>
+                <h1 class="titulo">${dadosLivro.nome}</h1>
+                <p${dadosLivro.autor}</p>
                 <hr>
                 <p>${dadosLivro.sinopse}</p>
+
+                <p>Editora: <em>${dadosLivro.editora}</em></p>
+                <p>Gênero: <strong>${dadosLivro.gênero}</strong></p>
+                <p>Adaptações: <strong>${dadosLivro.detalhes.adaptacoes}</strong></p>
+                <p>Páginas: ${dadosLivro.páginas}</p>
+                <p>Avaliação: ${dadosLivro.avaliacao}</p>
+                <p>Idioma: ${dadosLivro.idioma}</p>
+                <p>Ano: ${dadosLivro.ano}</p>
                 
                 <details>
-                    <p>Editora: <em>${dadosLivro.editora}</em></p>
-                    <p class="genero">Gênero: <strong>${dadosLivro.gênero}</strong></p>
-                    <p>Adaptações: <strong>${dadosLivro.detalhes.adaptacoes}</strong></p>
-                    <p>Avaliação: ${dadosLivro.avaliacao}</p>
-                    <p>Páginas: ${dadosLivro.páginas}</p>
-                    <p>Idioma: ${dadosLivro.idioma}</p>
-                    <p>Ano: ${dadosLivro.ano}</p>
-                    <p>Dados do ISBN: <strong>${dadosLivro.isbn}</strong></p>
+                    <p>ISBN: <strong>${dadosLivro.isbn}</strong></p>
                 </details>
             </div>`
-        ;
+            ;
 
         inforLivro.appendChild(article);
 
