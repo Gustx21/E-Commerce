@@ -1,51 +1,56 @@
 export function error(error) {
+    // Status de Bem-sucedidos
     switch (error.status) {
         case 100:
-            console.info(`Continue: ${error.status}`);
+            console.info(`O código de resposta de status informativo HTTP indica que tudo até agora está OK e que o cliente deve continuar com o solicitar ou ignorá-lo se já estiver concluído: ${error.status}`);
             break;
         case 101:
-            console.info(`Mudança de Protocolo: ${error.status}`);
+            console.info(`O código de resposta HTTP indica Um protocolo para o qual o servidor alterna. O protocolo é especificado no cabeçalho da solicitação de atualização recebida de um cliente: ${error.status}`);
             break;
         case 102:
-            console.info(`Processamento: ${error.status}`);
+            console.info(`O código de resposta de status informativo HTTP indica ao cliente que uma solicitação completa foi recebida e o servidor está trabalhando nela: ${error.status}`);
             break;
         case 103:
-            console.info(`Confirmação de Protocolo: ${error.status}`);
+            console.info(`Confirmação de Protocolo. Um servidor pode enviar várias respostas, por exemplo, após um redirecionamento. Os navegadores processam apenas a primeira resposta de dica inicial, e essa resposta deve ser descartada se a solicitação resultar em um redirecionamento entre origens. Os recursos pré-carregados da dica inicial são efetivamente pré-anexados ao elemento head do e, em seguida, seguidos pelos recursos carregados na resposta final: ${error.status}`);
             break;
         case 200:
-            console.info(`OK: ${error.status}`);
+            console.info(`O código de resposta de status de êxito HTTP indica que a solicitação foi bem-sucedida: ${error.status}`);
             break;
         case 201:
-            console.info(`Criado: ${error.status}`);
+            console.info(`O código de resposta de status de êxito HTTP indica que a solicitação tem conseguiu e levou à criação de um recurso: ${error.status}`);
             break;
         case 202:
-            console.info(`Aceito: ${error.status}`);
+            console.info(`O código de status da resposta HTTP indica que a solicitação foi aceita para processamento, mas o processamento não foi concluído; Na verdade, o processamento pode não ter começado ainda: ${error.status}`);
             break;
         case 203:
-            console.info(`Informações Não Autorizadas: ${error.status}`);
+            console.info(`A resposta HTTP status indica que a solicitação foi bem-sucedida, mas a carga anexada foi modificado por um proxy transformador daquele da origem resposta do servidor: ${error.status}`);
             break;
         case 204:
-            console.info(`Sem Conteúdo: ${error.status}`);
+            console.info(`O código de resposta de status de êxito HTTP indica que uma solicitação foi bem-sucedida, mas que o cliente não precisa navegar para longe de sua página atual: ${error.status}`);
             break;
         case 205:
-            console.info(`Conteúdo Restabelecido: ${error.status}`);
+            console.info(`O status da resposta HTTP diz ao cliente para redefinir a exibição do documento (ou seja, limpar o conteúdo de um formulário, redefinir o estado da tela ou a interface do usuário): ${error.status}`);
             break;
         case 206:
-            console.info(`Conteúdo Parcial: ${error.status}`);
+            console.info(`O código de resposta de status de êxito HTTP indica que a solicitação foi bem-sucedida e o corpo contém os intervalos solicitados de dados, conforme descrito no cabeçalho Range da solicitação: ${error.status}`);
             break;
         case 207:
-            console.info(`Status Multi-Status (WebDAV): ${error.status}`);
+            console.info(`O código de resposta HTTP indica que pode haver uma mistura de respostas: ${error.status}`);
             break;
         case 208:
-            console.info(`Já Relatado (WebDAV): ${error.status}`);
+            console.info(`O status da resposta HTTP é usado em uma resposta Multi-Status 207 para economizar espaço e evitar conflitos. Se o mesmo recurso for solicitado várias vezes (por exemplo, como parte de uma coleção), com caminhos diferentes, apenas o primeiro será relatado com 200. As respostas para todas as outras ligações serão relatadas com esse código de status 208, para que nenhum conflito seja criado e a resposta permaneça mais curta: ${error.status}`);
+            break;
+        case 214:
+            console.info(`Para indicar que uma transformação foi aplicada à representação: ${error.status}`);
             break;
         case 226:
-            console.info(`IM Usado: ${error.status}`);
+            console.info(`O status de resposta HTTP, no contexto de codificações delta, é um código de status definido pelo servidor para indicar que ele está retornando um delta para a solicitação GET que recebeu. IM significa Manipulações de Instância, o termo usado para descrever um algoritmo que gera um delta: ${error.status}`);
             break;
         default:
             break;
     }
 
+    // Status de Error
     switch (error.status) {
         case 300:
             console.error(`O código de resposta de redirecionamento indica que a solicitação tem mais de uma resposta possível: ${url.status}`);
@@ -171,6 +176,7 @@ export function error(error) {
             break;
     }
 
+    // Error de Funcionamento
     switch (error.name) {
         case 'TypeError':
             console.error(`Erro de tipo! ${error.toString()} `);
