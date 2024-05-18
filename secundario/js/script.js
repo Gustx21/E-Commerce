@@ -1,4 +1,4 @@
-const id = new URLSearchParams(window.location.search).get('id') - 1;
+const id = new URLSearchParams(window.location.search).get('id');
 
 // CARREGANDO LIVRO ESPECÍFICO
 async function livroEspecifico() {
