@@ -11,9 +11,13 @@
 ## Ferramentas 
 * json-server
 
+## Projetos Hospedados
+[Página de todos o livros](https://gustx21.github.io/E-Commerce/principal/livros.html)
+[Página de um o livro específico](https://gustx21.github.io/E-Commerce/secundario/livro.html)
+[Página de cadastro de usuários](https://gustx21.github.io/E-Commerce/terciario/cadastro.html)
+
 ## Objetivo
  O intuito desse projeto é a prática de JavaScript, especificamente, uso de Promises, Requisições Fetch e manipulação de dados JSON.
- 
 
 ### Contribuição😊
  Contribuições são bem-vindas! Sinta-se à vontade para melhorar a estrutura, adicionar funcionalidade ou corrigir qualquer problema identificado.
