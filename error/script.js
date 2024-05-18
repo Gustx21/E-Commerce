@@ -1,6 +1,6 @@
 export function error(error) {
-    // Status de Bem-sucedidos
     switch (error.status) {
+        // Status de Bem-sucedidos
         case 100:
             console.info(`O código de resposta de status informativo HTTP indica que tudo até agora está OK e que o cliente deve continuar com o solicitar ou ignorá-lo se já estiver concluído: ${error.status}`);
             break;
@@ -46,12 +46,8 @@ export function error(error) {
         case 226:
             console.info(`O status de resposta HTTP, no contexto de codificações delta, é um código de status definido pelo servidor para indicar que ele está retornando um delta para a solicitação GET que recebeu. IM significa Manipulações de Instância, o termo usado para descrever um algoritmo que gera um delta: ${error.status}`);
             break;
-        default:
-            break;
-    }
-
-    // Status de Error
-    switch (error.status) {
+            
+        // Status de Error
         case 300:
             console.error(`O código de resposta de redirecionamento indica que a solicitação tem mais de uma resposta possível: ${url.status}`);
         case 301:
