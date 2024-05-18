@@ -32,7 +32,7 @@ async function consultaDados() {
 
             const link = document.createElement("a");
             link.href = `../secundario/livro.html?id=${info.id}`;
-            link.target = "_blank";
+            link.target = "_self";
             link.textContent = "Ver detalhes";
 
             conteudoDiv.append(h1, autorParag, document.createElement("hr"), generoParag, link);
