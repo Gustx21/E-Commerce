@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Mate", serif;
+}
+
+.erro {
+    text-align: center;
+    background-color: #344E41;
+    color: #f8f8f8;
+}
+
+.icon {
+    width: 30px;
+}
+
+#logo {
+    background: linear-gradient(90deg, #A3B18A 5%, #588157 25%, #344E41 50%);
+    background-clip: text;
+    color: transparent;
+}
+
+body {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+a {
+    color: #000;
+    padding-top: 10px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* SEÇÃO PESQUISA */
+.botao-pesquisa {
+    display: flex;
+    justify-content: space-evenly;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #344E41;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #344E41;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow-x: scroll;
+}
+
+.genero-botao {
+    padding: 12px;
+    margin: 20px 0;
+    border-radius: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: #DAD7CD;
+    color: #000;
+    transition: 0.5s;
+    border: none;
+}
+
+.genero-botao:hover {
+    background-color: #A3B18A;
+}
+
+.btn {
+    background-color: #588157;
+    border: none;
+    border-radius: 10px;
+
+    color: #f9f9f9;
+    cursor: pointer;
+
+    padding: 10px 30px;
+    transition: .5s;
+}
+
+.btn a {
+    color: #f9f9f9;
+}
+
+.btn:hover {
+    background-color: #344E41;
+}
+
+#pesquisar {
+    width: 180px;
+    height: 40px;
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* SEÇÃO DO SERVIDOR */
+.livros {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    row-gap: 3em;
+    column-gap: 1rem;
+    width: 100%;
+    margin: 3rem 0;
+}
+
+.produtos {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 30px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 360px;
+    grid-template-rows: 400px, 200px;
+    grid-template-areas: 
+    "img"
+    "div";
+}
+
+.titulo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.conteudo {
+    text-align: justify;
+    grid-column: span 2;
+    grid-row: 2;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    grid-area: div;
+}
+
+p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.preco {
+    grid-column: span 2;
+    grid-row: 2;
+}
+
+.img-produto {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    grid-column: span 2;
+    grid-row: 1;
+    grid-area: img;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #f8f8f8;
+    color: #000;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    padding: 30px;
+}
+
+footer img {
+    width: 13%;
+    padding: 8px;
+}
+
+.rodape h3 {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.rodape a {
+    color: #000;
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.rodape a:hover {
+    text-decoration: underline;
+}
+
+#rodape {
+    width: 70%;
+}
+
+@media screen and (max-width: 1250px) {
+
+    .botao-pesquisa {
+        column-gap: 20px;
+    }
+    
+    /* SEÇÃO DO SERVIDOR */
+    .livros {
+        grid-template-columns: auto auto;
+        gap: 1.5rem;
+    }
+
+    .produtos {
+        width: 380px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    nav {
+        flex-direction: column;
+    }
+    
+    .guias {
+        margin-top: 10px;
+        margin-bottom: 15px;
+        padding: 0;
+    }
+
+    /* SEÇÃO DO SERVIDOR */
+    .livros {
+        grid-template-columns: auto;
+    }
+
+    .produtos {
+        width: 500px;
+    }
+
+    /* RODAPÉ */
+    footer {
+        grid-template-columns: auto;
+    }
+}
