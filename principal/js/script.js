@@ -33,6 +33,7 @@ async function consultaDados() {
             generoParag.classList.add("genero");
 
             const link = document.createElement("a");
+            link.href = `../secundario/livro.html?id=${info.id}`;
             link.target = "_self";
             link.textContent = "Ver detalhes";
 
