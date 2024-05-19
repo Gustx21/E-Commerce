@@ -1,6 +1,13 @@
 import { error } from "../../error/script.js";
 
-const id = new URLSearchParams(window.location.search).get('id');
+let id = new URLSearchParams(window.location.search).get('id');
+
+if (id) {
+    console.info(`Cliente solicitou anteriormente um livro específico: ${true}`);
+} else {
+    id = Math.floor(Math.random() * 11);
+    console.warn(`Requisição sem solicitação: ${true}`);
+}
 
 // CARREGANDO LIVRO ESPECÍFICO
 async function livroEspecifico() {
