@@ -2,11 +2,9 @@ import { error } from "../../error/script.js";
 
 let id = new URLSearchParams(window.location.search).get('id');
 
-if (id) {
-    console.info(`Cliente solicitou anteriormente um livro específico: ${true}`);
-} else {
+if (!id) {
     id = Math.floor(Math.random() * 11);
-    console.warn(`Requisição sem solicitação: ${true}`);
+    console.warn("Requisição sem solicitação do livro específico.");
 }
 
 // CARREGANDO LIVRO ESPECÍFICO
