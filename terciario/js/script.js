@@ -9,7 +9,7 @@ async function inserirUser() {
         const nome = document.getElementById("nome").value;
         const texto = document.getElementById("comentario").value;
     
-        let response = await fetch("http://127.0.0.1:8080/user",
+        let res = await fetch("http://127.0.0.1:8080/user",
             {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
@@ -17,7 +17,7 @@ async function inserirUser() {
             }
         )
         
-        error(response);
+        error(res);
         
     } catch (error) {
         error(error);
