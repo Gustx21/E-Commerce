@@ -9,10 +9,10 @@ if (!id) {
 
 // CARREGANDO LIVRO ESPECÍFICO
 async function livroEspecifico() {
-    const inforLivro = document.getElementById("inforLivros");
+    const inforLivro = document.getElementById("infor-livro");
 
     try {
-        const url = await fetch(`https://gustx21.github.io/E-Commerce/backend/produtos.json`);
+        const url = await fetch("https://gustx21.github.io/E-Commerce/backend/produtos.json");
         const dadosLivro = await url.json();
 
         error(url);
