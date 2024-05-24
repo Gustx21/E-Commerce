@@ -1,4 +1,4 @@
-# Projeto de E-Commerce 📱
+# Projeto de E-Commerce
  Página de Livros no HTML. Uma aplicação simples para interação do usuários e apresentação de diferentes produtos.
 
 ## Tecnologia⚡
