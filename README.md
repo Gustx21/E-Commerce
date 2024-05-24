@@ -5,18 +5,12 @@
 * JavaScript
 * HTML
 * CSS
-* JSON
 * HTTP
-
-## Ferramentas 
-* json-server
 
 ## Projetos Hospedados
  [Página E-Commerce](https://gustx21.github.io/E-Commerce/principal/livros.html)
 
  [Página de um Produto](https://gustx21.github.io/E-Commerce/secundario/livro.html)
-
- [Página de Cadastro](https://gustx21.github.io/E-Commerce/terciario/cadastro.html)
 
 ## Objetivo
  O intuito desse projeto é a prática de JavaScript, especificamente, uso de Promises, Requisições Fetch e manipulação de dados JSON.
