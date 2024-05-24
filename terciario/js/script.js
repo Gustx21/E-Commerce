@@ -9,10 +9,14 @@ async function inserirUser() {
         const nome = document.getElementById("nome").value;
         const texto = document.getElementById("comentario").value;
     
-        let res = await fetch("http://127.0.0.1:8080/user",
+        let res = await fetch("https://gustx21.github.io/E-Commerce/backend/user.json",
             {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
+                method: "OPTIONS, POST",
+                credentials: "include",
+                headers: {
+                    "Content-Type": "application/json",
+                    "mode": "cors"
+                },
                 body: JSON.stringify({ email, nome, texto })
             }
         )
