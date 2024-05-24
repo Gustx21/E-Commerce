@@ -1,4 +1,4 @@
-# Projeto de E-Commerce
+# Projeto de E-Commerce 📱
  Página de Livros no HTML. Uma aplicação simples para interação do usuários e apresentação de diferentes produtos.
 
 ## Tecnologia⚡
@@ -7,12 +7,12 @@
 * CSS
 * HTTP
 
-## Projetos Hospedados
+## Projetos Hospedados 🌐
  [Página E-Commerce](https://gustx21.github.io/E-Commerce/principal/livros.html)
 
  [Página de um Produto](https://gustx21.github.io/E-Commerce/secundario/livro.html)
 
-## Objetivo
+## Objetivo 📝
  O intuito desse projeto é a prática de JavaScript, especificamente, uso de Promises, Requisições Fetch e manipulação de dados JSON.
 
 ### Contribuição😊
