@@ -23,6 +23,36 @@ a {
     font-size: 16px;
 }
 
+.secao-exclusivos {
+    display: flex;
+    justify-content: space-evenly;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #344E41;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #344E41;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow-x: scroll;
+}
+
+button[type="button"] {
+    padding: 12px;
+    margin: 15px 0;
+    border-radius: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: #DAD7CD;
+    color: #000;
+    transition: 0.5s;
+    border: none;
+}
+
+button[type="button"]:hover {
+    background-color: #A3B18A;
+}
+
 .btn {
     background-color: #588157;
     border: none;
