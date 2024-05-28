@@ -2,10 +2,10 @@ import { error } from "../../error/script.js";
 
 // Requisição
 async function consultaDados() {
-    const livros = document.querySelector('.livros');
+    const livros = document.querySelector(".livros");
 
     try {
-        const url = await fetch('https://gustx21.github.io/E-Commerce/backend/produtos.json');
+        const url = await fetch("https://gustx21.github.io/E-Commerce/backend/produtos.json");
         const conteudo = await url.json();
 
         error(url);
@@ -16,18 +16,18 @@ async function consultaDados() {
 
             const conteudoImg = document.createElement("img");
             conteudoImg.src = info.imagem;
-            conteudoImg.className = "img-produto";
+            conteudoImg.classList.add("img-produto");
 
             const conteudoDiv = document.createElement("div");
             conteudoDiv.classList.add("conteudo");
 
             const h1 = document.createElement("h1");
-            h1.classList.add("titulo");
             h1.textContent = info.nome;
+            h1.classList.add("titulo");
 
             const autorParag = document.createElement("p");
-            autorParag.classList.add("autor");
             autorParag.textContent = info.autor;
+            autorParag.classList.add("autor");
 
             const generoParag = document.createElement("p");
             generoParag.classList.add("genero");
@@ -51,12 +51,12 @@ async function consultaDados() {
 document.addEventListener("DOMContentLoaded", consultaDados);
 
 // Barra de pesquisa
-const barraPesquisa = document.querySelector('#pesquisar');
+const barraPesquisa = document.querySelector("#pesquisar");
 barraPesquisa.addEventListener("input", filtraPesquisa);
 
 function filtraPesquisa() {
-    const infor = document.querySelectorAll('.produtos');
-    const pesquisa = document.getElementById('pesquisar');
+    const infor = document.querySelectorAll(".produtos");
+    const pesquisa = document.getElementById("pesquisar");
 
     for (let resultado of infor) {
         const titulo = resultado.querySelector(".titulo").textContent.toLowerCase();
