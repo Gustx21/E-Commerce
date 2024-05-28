@@ -34,7 +34,7 @@ async function livroEspecifico() {
 
                 <p>Editora: <em>${dadosLivro.produtos[id].editora}</em></p>
                 <p>Gênero: <strong>${dadosLivro.produtos[id].gênero}</strong></p>
-                <p>Adaptações: <strong>${dadosLivro.produtos[id].detalhes.adaptacoes}</strong></p>
+                <p>Adaptações: <strong>${dadosLivro.produtos[id].detalhes.adaptacoes.join(", ")}</strong></p>
                 <p>Páginas: ${dadosLivro.produtos[id].páginas}</p>
                 <p>Avaliação: ${dadosLivro.produtos[id].avaliacao}</p>
                 <p>Idioma: ${dadosLivro.produtos[id].idioma}</p>
