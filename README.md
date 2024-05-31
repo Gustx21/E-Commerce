@@ -25,5 +25,5 @@
 * Seja cordial e construtivo nas discussões sobre pull requests.
 
 ### Licença⚙️
- Este projeto é licenciado sob a [licença MIT](LICENSA), o que significa que você é livre para usar, modificar e distribuir este código.
+ Este projeto é licenciado sob a [licença MIT](LICENSE), o que significa que você é livre para usar, modificar e distribuir este código.
  Esperamos contar com sua contribuição para tomar o Projeto JavaScript uma referência de solução práticas em JavaScript. Obrigado por fazer parte desta comunidade!
