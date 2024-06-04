@@ -30,7 +30,10 @@ async function consultaDados() {
             autorParag.classList.add("autor");
 
             const generoParag = document.createElement("p");
-            generoParag.classList.add("genero");
+            const markTexto = document.createElement("strong");
+            markTexto.classList.add("genero");
+            markTexto.textContent = info.gênero;
+            generoParag.append(markTexto);
 
             const link = document.createElement("a");
             link.href = `../secundario/livro.html?id=${info.id}`;
