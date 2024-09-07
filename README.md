@@ -20,7 +20,7 @@
  Contribuições são bem-vindas! Sinta-se à vontade para melhorar a estrutura, adicionar funcionalidade ou corrigir qualquer problema identificado.
 
 ### Diretrizes de Contribuição📌
-* Mantenha o código limpo, seguindo as melhoress práticas do JavaScript.
+* Mantenha o código limpo, seguindo as melhores práticas do JavaScript.
 * Adicione comentários explicativos para facilitar a compreensão.
 * Seja cordial e construtivo nas discussões sobre pull requests.
 
